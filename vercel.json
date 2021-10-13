@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "alias": "buriedsignals.pub",
+  "routes": [
+    {
+      "src": "/([^/]+)",
+      "status": 302,
+      "headers": { "Location": "/$1/" }
+    },
+    { "src": "/my-first-article/(.*)", "dest": "https://buriedsignalsmag.github.io/my-first-article/$1" }
+  ]
+}
+
