@@ -1,0 +1,27 @@
+{
+  "name": "buried-signals-site-index",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "idyll --template _local.html",
+    "build": "idyll build --output docs",
+    "update-vercel": "node scripts/create-vercel-json.js",
+    "vercel-build": "npm run build && npm run update-vercel",
+    "deploy": "npm run vercel-build && vercel"
+  },
+  "idyll": {
+    "css": "styles.css",
+    "authorView": false,
+    "template": "_index.html",
+    "theme": "default",
+    "layout": "blog"
+  },
+  "dependencies": {
+    "d3": "^6.7.0",
+    "gsap": "^3.8.0",
+    "idyll": "^5.7.2",
+    "idyll-d3-component": "^2.0.0",
+    "three": "^0.133.1",
+    "vercel": "^23.1.2"
+  }
+}

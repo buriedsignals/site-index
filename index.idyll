@@ -1,0 +1,16 @@
+
+[meta title:"Buried Signals" description:"Cool interactive articles" /]
+
+[data name:"articles" source:"articles.json" /]
+
+
+# Buried Signals
+
+
+## Our articles
+
+[ArticleList articles:articles /]
+
+## About us
+
+[About](/about)

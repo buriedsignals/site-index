@@ -1,0 +1,9 @@
+[{
+  "title": "First test article",
+  "slug": "test-article-01",
+  "deployUrl": "https://buried-signals-test-article-001.vercel.app"
+}, {
+  "title": "Second test article",
+  "slug": "test-article-02",
+  "deployUrl": "https://buried-signals-test-article-002.vercel.app"
+}]

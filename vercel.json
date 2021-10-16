@@ -1,13 +1,24 @@
 {
   "version": 2,
-  "alias": "buriedsignals.pub",
   "routes": [
     {
       "src": "/([^/]+)",
       "status": 302,
-      "headers": { "Location": "/$1/" }
+      "headers": {
+        "Location": "/$1/"
+      }
     },
-    { "src": "/my-first-article/(.*)", "dest": "https://buriedsignalsmag.github.io/my-first-article/$1" }
+    {
+      "src": "/about/(.*)",
+      "dest": "https://buried-signals-about.vercel.app/$1"
+    },
+    {
+      "src": "/test-article-01/(.*)",
+      "dest": "https://buried-signals-test-article-001.vercel.app/$1"
+    },
+    {
+      "src": "/test-article-02/(.*)",
+      "dest": "https://buried-signals-test-article-002.vercel.app/$1"
+    }
   ]
 }
-
