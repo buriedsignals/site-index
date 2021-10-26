@@ -15,8 +15,10 @@ fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'vercel.json')), JSON.s
         "headers": { "Location": "/$1/" }
       },
       { "src": "/about/(.*)", "dest": "https://buried-signals-about.vercel.app/$1" },
-      ...articles.map((article) => {
-        return { "src": `/${article.slug}/(.*)`, "dest": `${article.deployUrl}/$1` }
+      ...articles.filter(article => {
+        return article.slug.startsWith('http://') || article.slug.startsWith('https://');
+      }).map((article) => {
+        return { "src": `${article.slug}/(.*)`, "dest": `${article.deployUrl}/$1` }
       })
     ]
   }

@@ -1,9 +1,12 @@
 [{
   "title": "First test article",
-  "slug": "test-article-01",
-  "deployUrl": "https://buried-signals-test-article-001.vercel.app"
+  "slug": "/test-article-01",
+  "deployUrl": "https://buriedsignalsmag.github.io/test-article-01/"
 }, {
   "title": "Second test article",
-  "slug": "test-article-02",
-  "deployUrl": "https://buried-signals-test-article-002.vercel.app"
+  "slug": "/test-article-02",
+  "deployUrl": "https://buriedsignalsmag.github.io/test-article-02/"
+}, {
+  "title": "An externral article",
+  "slug": "https:///some-otheer-site.com/article"
 }]

@@ -13,7 +13,7 @@ class ArticleList extends React.Component {
       <div>
         {props.articles.map((article) => {
           return <div key={article.slug}>
-            <a href={`/${article.slug}`}>{article.title}</a>
+            <a href={`${article.slug}`}>{article.title}</a>
           </div>
         })}
       </div>
