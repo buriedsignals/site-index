@@ -1345,3 +1345,14 @@ img {
 
 
 
+
+
+.article-category {
+  cursor: pointer;
+  margin: 0 0.5em 0 0;
+  text-transform: capitalize;
+}
+
+.article-category:hover {
+  font-weight: bold;
+}

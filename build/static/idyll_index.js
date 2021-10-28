@@ -3,6 +3,8 @@ require=(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c=
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19,12 +21,19 @@ var ArticleList = function (_React$Component) {
   function ArticleList(props) {
     _classCallCheck(this, ArticleList);
 
-    return _possibleConstructorReturn(this, (ArticleList.__proto__ || Object.getPrototypeOf(ArticleList)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ArticleList.__proto__ || Object.getPrototypeOf(ArticleList)).call(this, props));
+
+    _this.state = {
+      selectedCategory: 'all'
+    };
+    return _this;
   }
 
   _createClass(ArticleList, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var _props = this.props,
           hasError = _props.hasError,
           idyll = _props.idyll,
@@ -32,20 +41,89 @@ var ArticleList = function (_React$Component) {
           clickCount = _props.clickCount,
           props = _objectWithoutProperties(_props, ['hasError', 'idyll', 'updateProps', 'clickCount']);
 
+      var allArticles = props.articles;
+      var allCategories = [].concat(_toConsumableArray(new Set(allArticles.flatMap(function (article) {
+        return article.categories;
+      }))));
+
+      allCategories.sort(function (a, b) {
+        return a.localeCompare(b);
+      });
+
+      var featuredArticles = allArticles.filter(function (article) {
+        return article.featured;
+      });
+      var unfeaturedArticles = allArticles.filter(function (article) {
+        return !article.featured;
+      });
+
+      var selectedCategoryArticles = this.state.selectedCategory === 'all' ? unfeaturedArticles : unfeaturedArticles.filter(function (article) {
+        return article.categories.includes(_this2.state.selectedCategory);
+      });
+
       return React.createElement(
         'div',
         null,
-        props.articles.map(function (article) {
-          return React.createElement(
+        React.createElement(
+          'div',
+          null,
+          'Featured',
+          React.createElement(
             'div',
-            { key: article.slug },
+            null,
+            featuredArticles.map(function (article) {
+              return React.createElement(
+                'div',
+                { style: { width: 600, height: 300, background: '#ddd' }, key: article.slug },
+                React.createElement(
+                  'a',
+                  { href: '' + article.slug },
+                  article.title
+                )
+              );
+            })
+          )
+        ),
+        React.createElement(
+          'div',
+          null,
+          React.createElement(
+            'div',
+            { style: { display: 'flex', flexDirection: 'row', marginTop: '2em' } },
             React.createElement(
-              'a',
-              { href: '/' + article.slug },
-              article.title
-            )
-          );
-        })
+              'div',
+              { className: 'article-category', onClick: function onClick() {
+                  return _this2.setState({ selectedCategory: 'all' });
+                } },
+              'All'
+            ),
+            allCategories.map(function (category) {
+              return React.createElement(
+                'div',
+                { key: category, className: 'article-category', onClick: function onClick() {
+                    return _this2.setState({ selectedCategory: category });
+                  } },
+                category
+              );
+            })
+          ),
+          selectedCategoryArticles.map(function (article) {
+            return React.createElement(
+              'div',
+              { key: article.slug },
+              React.createElement(
+                'a',
+                { href: '' + article.slug },
+                article.title
+              )
+            );
+          })
+        ),
+        React.createElement(
+          'div',
+          null,
+          'See more.... (doesn\'t work yet)'
+        )
       );
     }
   }]);
@@ -67342,7 +67420,7 @@ module.exports = function whichTypedArray(value) {
 },{"available-typed-arrays":"/Users/mathisonian/projects/buried-signals-mag/site-index/node_modules/available-typed-arrays/index.js","call-bind/callBound":"/Users/mathisonian/projects/buried-signals-mag/site-index/node_modules/call-bind/callBound.js","es-abstract/helpers/getOwnPropertyDescriptor":"/Users/mathisonian/projects/buried-signals-mag/site-index/node_modules/es-abstract/helpers/getOwnPropertyDescriptor.js","foreach":"/Users/mathisonian/projects/buried-signals-mag/site-index/node_modules/foreach/index.js","has-tostringtag/shams":"/Users/mathisonian/projects/buried-signals-mag/site-index/node_modules/has-tostringtag/shams.js","is-typed-array":"/Users/mathisonian/projects/buried-signals-mag/site-index/node_modules/is-typed-array/index.js"}],"__IDYLL_AST__":[function(require,module,exports){
 "use strict";
 
-module.exports = { "id": 0, "type": "component", "name": "div", "children": [{ "id": 2, "type": "data", "properties": { "name": { "type": "value", "value": "articles" }, "source": { "type": "value", "value": "articles.json" } } }, { "id": 3, "type": "component", "name": "TextContainer", "children": [{ "id": 4, "type": "component", "name": "h1", "children": [{ "id": 5, "type": "textnode", "value": "Buried Signals" }] }, { "id": 6, "type": "component", "name": "h2", "children": [{ "id": 7, "type": "textnode", "value": "Our articles" }] }, { "id": 8, "type": "component", "name": "ArticleList", "properties": { "articles": { "type": "variable", "value": "articles" } }, "children": [] }, { "id": 9, "type": "component", "name": "h2", "children": [{ "id": 10, "type": "textnode", "value": "About us" }] }, { "id": 11, "type": "component", "name": "a", "properties": { "href": { "type": "value", "value": "/about" } }, "children": [{ "id": 12, "type": "textnode", "value": "About" }] }] }] };
+module.exports = { "id": 0, "type": "component", "name": "div", "children": [{ "id": 2, "type": "data", "properties": { "name": { "type": "value", "value": "articles" }, "source": { "type": "value", "value": "articles.json" } } }, { "id": 3, "type": "component", "name": "TextContainer", "children": [{ "id": 4, "type": "meta", "properties": { "title": { "type": "value", "value": "Buried Signals" }, "description": { "type": "value", "value": "Cool interactive articles" } } }, { "id": 5, "type": "component", "name": "h1", "children": [{ "id": 6, "type": "textnode", "value": "Buried Signals" }] }, { "id": 7, "type": "component", "name": "h2", "children": [{ "id": 8, "type": "textnode", "value": "Our articles" }] }, { "id": 9, "type": "component", "name": "ArticleList", "properties": { "articles": { "type": "variable", "value": "articles" } }, "children": [] }, { "id": 10, "type": "component", "name": "h2", "children": [{ "id": 11, "type": "textnode", "value": "About us" }] }, { "id": 12, "type": "component", "name": "a", "properties": { "href": { "type": "value", "value": "/about" } }, "children": [{ "id": 13, "type": "textnode", "value": "About" }] }] }] };
 
 },{}],"__IDYLL_COMPONENTS__":[function(require,module,exports){
 'use strict';
@@ -67362,7 +67440,7 @@ module.exports = function () {
 },{}],"__IDYLL_DATA__":[function(require,module,exports){
 "use strict";
 
-module.exports = { "articles": [{ "title": "First test article", "slug": "test-article-01", "deployUrl": "https://buried-signals-test-article-001.vercel.app" }, { "title": "Second test article", "slug": "test-article-02", "deployUrl": "https://buried-signals-test-article-002.vercel.app" }] };
+module.exports = { "articles": [{ "title": "First test article", "slug": "/test-article-01", "categories": ["categoryA", "categoryC"], "featured": true, "deployUrl": "https://buriedsignalsmag.github.io/test-article-01/" }, { "title": "Second test article", "slug": "/test-article-02", "categories": ["categoryB"], "deployUrl": "https://buriedsignalsmag.github.io/test-article-02/" }, { "title": "An external article", "categories": ["categoryB", "categoryC"], "slug": "https:///some-otheer-site.com/article" }] };
 
 },{}],"__IDYLL_OPTS__":[function(require,module,exports){
 "use strict";

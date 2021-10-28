@@ -1,5 +1,3 @@
-
-
 const fs = require('fs');
 const path = require('path');
 const articles = require('../data/articles.json');
@@ -22,4 +20,4 @@ fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'vercel.json')), JSON.s
       })
     ]
   }
-, null, 2))
+, null, 2));
