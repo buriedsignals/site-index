@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update-vercel": "node scripts/create-routes.js",
-    "vercel-build": "npm run build && npm run update-vercel",
-    "deploy": "npm run vercel-build && vercel"
+    "deploy": "vercel"
   },
   "dependencies": {
     "next": "12.0.1",
