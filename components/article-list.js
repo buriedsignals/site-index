@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 
 class ArticleList extends React.Component {
 
@@ -56,7 +57,9 @@ class ArticleList extends React.Component {
           })}
         </div>
         <div>
-          <a href="/articles">See more...</a>
+          <Link href="/articles">
+            <a>See more...</a>
+          </Link>
         </div>
       </div>
     );

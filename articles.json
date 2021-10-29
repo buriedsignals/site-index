@@ -12,5 +12,5 @@
 }, {
   "title": "An external article",
   "categories": ["categoryB", "categoryC"],
-  "slug": "https:///some-otheer-site.com/article"
+  "slug": "https://some-otheer-site.com/article"
 }]
