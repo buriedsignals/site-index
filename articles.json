@@ -3,12 +3,12 @@
   "slug": "/test-article-01",
   "categories": ["categoryA", "categoryC"],
   "featured": true,
-  "deployUrl": "https://buriedsignalsmag.github.io/test-article-01/"
+  "deployUrl": "https://buriedsignalsmag.github.io/test-article-01"
 }, {
   "title": "Second test article",
   "slug": "/test-article-02",
   "categories": ["categoryB"],
-  "deployUrl": "https://buriedsignalsmag.github.io/test-article-02/"
+  "deployUrl": "https://buriedsignalsmag.github.io/test-article-02"
 }, {
   "title": "An external article",
   "categories": ["categoryB", "categoryC"],

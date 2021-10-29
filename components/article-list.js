@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 class ArticleList extends React.Component {
 
@@ -6,7 +6,7 @@ class ArticleList extends React.Component {
     super(props);
 
     this.state = {
-      selectedCategory: 'all'
+      selectedCategory: props.category || 'all'
     }
   }
 
@@ -27,9 +27,7 @@ class ArticleList extends React.Component {
     const selectedCategoryArticles = this.state.selectedCategory === 'all' ? unfeaturedArticles : unfeaturedArticles.filter((article) => article.categories.includes(this.state.selectedCategory));
 
     return (
-
       <div>
-
         <div>
             Featured
             <div>
@@ -58,11 +56,11 @@ class ArticleList extends React.Component {
           })}
         </div>
         <div>
-          See more.... (doesn't work yet)
+          <a href="/articles">See more...</a>
         </div>
       </div>
     );
   }
 }
 
-module.exports = ArticleList;
+export default ArticleList;

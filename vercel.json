@@ -13,8 +13,12 @@
       "dest": "https://buried-signals-about.vercel.app/$1"
     },
     {
-      "src": "https:///some-otheer-site.com/article/(.*)",
-      "dest": "undefined/$1"
+      "src": "/test-article-01/(.*)",
+      "dest": "https://buriedsignalsmag.github.io/test-article-01/$1"
+    },
+    {
+      "src": "/test-article-02/(.*)",
+      "dest": "https://buriedsignalsmag.github.io/test-article-02/$1"
     }
   ]
 }
