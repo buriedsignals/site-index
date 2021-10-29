@@ -1,14 +1,14 @@
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 1em;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 * {
@@ -24,4 +24,12 @@ a {
 
 .article-category:hover {
   font-weight: bold;
+}
+
+button {
+  margin: 1em auto;
+  border: solid 1px;
+  padding: 0.5em 2em;
+  text-align: center;
+  cursor: pointer;
 }

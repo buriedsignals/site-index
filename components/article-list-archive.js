@@ -1,5 +1,6 @@
 const React = require('react');
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const ArticleListRouter = (props) => {
   const router = useRouter()
@@ -18,6 +19,7 @@ class ArticleList extends React.Component {
 
   render() {
     const { hasError, idyll, updateProps, clickCount, ...props } = this.props;
+    console.log('rendering article list archive', props.category);
 
     const allArticles = props.articles;
     const allCategories = [...(new Set(allArticles.flatMap(article => article.categories)))];
@@ -26,7 +28,7 @@ class ArticleList extends React.Component {
       return a.localeCompare(b);
     })
 
-    const selectedCategoryArticles = this.state.selectedCategory === 'all' ? allArticles : allArticles.filter((article) => article.categories.includes(this.state.selectedCategory));
+    const selectedCategoryArticles = props.category === 'all' ? allArticles : allArticles.filter((article) => article.categories.includes(props.category));
 
     return (
       <div>

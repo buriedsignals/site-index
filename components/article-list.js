@@ -58,7 +58,7 @@ class ArticleList extends React.Component {
         </div>
         <div>
           <Link href="/articles">
-            <a>See more...</a>
+            <button>See more...</button>
           </Link>
         </div>
       </div>
