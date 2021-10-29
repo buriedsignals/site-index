@@ -31,18 +31,16 @@ class ArticleList extends React.Component {
     return (
       <div>
         <div style={{display: 'flex', flexDirection: 'row', marginTop: '2em'}}>
-          <div className={'article-category'} onClick={() => {
-              this.setState({ selectedCategory: 'all' });
-              props.router.push(`/articles/`);
-            }}>
-            All
+          <div className={'article-category'}>
+              <Link href="/articles">
+                All
+              </Link>
           </div>
           {allCategories.map((category) => {
-            return <div key={category} className={'article-category'} onClick={() => {
-              this.setState({ selectedCategory: category });
-              props.router.push(`/articles/${category}`);
-            }}>
-              {category}
+            return <div key={category} className={'article-category'}>
+              <Link href={`/articles/${category}`}>
+                {category}
+              </Link>
             </div>
           })}
         </div>
