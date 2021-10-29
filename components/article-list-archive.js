@@ -31,7 +31,10 @@ class ArticleList extends React.Component {
     return (
       <div>
         <div style={{display: 'flex', flexDirection: 'row', marginTop: '2em'}}>
-          <div className={'article-category'} onClick={() => this.setState({ selectedCategory: 'all' })}>
+          <div className={'article-category'} onClick={() => {
+              this.setState({ selectedCategory: 'all' });
+              props.router.push(`/articles/`);
+            }}>
             All
           </div>
           {allCategories.map((category) => {
