@@ -1,12 +1,15 @@
 import { useRouter } from 'next/router';
 import ArticleList from '../components/article-list';
+import Navigation from '../components/navigation';
 import articles from '../articles.json';
 
 const ArticleCategory = () => {
   const router = useRouter();
   const { category } = router.query;
 
-  return (<div>
+  return (
+    <div className="index-wrapper">
+    <Navigation />
     <h1>Buried Signals</h1>
     <h2>Articles</h2>
     <ArticleList articles={articles} catgory={category} />
