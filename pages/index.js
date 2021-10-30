@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import ArticleList from '../components/article-list';
 import Navigation from '../components/navigation';
+import Footer from '../components/footer';
+import Header from '../components/header';
 import articles from '../articles.json';
 
 const ArticleCategory = () => {
@@ -8,14 +10,15 @@ const ArticleCategory = () => {
   const { category } = router.query;
 
   return (
-    <div className="index-wrapper">
-    <Navigation />
-    <h1>Buried Signals</h1>
-    <h2>Articles</h2>
-    <ArticleList articles={articles} catgory={category} />
-    <h2>About</h2>
-    <a href="/about">About</a>
-  </div>)
+    <div className="global-wrapper">
+      <Navigation />
+      <div className="index-wrapper">
+        <Header />
+        <ArticleList articles={articles} catgory={category} />
+      </div> 
+      <Footer />
+  </div>
+  )
 }
 
 export default ArticleCategory;

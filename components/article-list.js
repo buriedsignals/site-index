@@ -28,19 +28,19 @@ class ArticleList extends React.Component {
     const selectedCategoryArticles = this.state.selectedCategory === 'all' ? unfeaturedArticles : unfeaturedArticles.filter((article) => article.categories.includes(this.state.selectedCategory));
 
     return (
-      <div>
-        <div>
-            Featured
+      <div className="articles-index-wrapper">
+        <div className="featured-article-wrapper">
             <div>
               {featuredArticles.map((article) => {
-                return <div style={{width: 600, height: 300, background: '#ddd'}} key={article.slug}>
+                return <div className="featured-article" key={article.slug}>
+                  Featured
                   <a href={`${article.slug}`}>{article.title}</a>
                 </div>
               })}
             </div>
         </div>
         <div>
-          <div style={{display: 'flex', flexDirection: 'row', marginTop: '2em'}}>
+          <div className="index-categories" style={{display: 'flex', flexDirection: 'row', marginTop: '2em'}}>
             <div className={'article-category'} onClick={() => this.setState({ selectedCategory: 'all' })}>
               All
             </div>
@@ -50,15 +50,17 @@ class ArticleList extends React.Component {
               </div>
             })}
           </div>
-          {selectedCategoryArticles.map((article) => {
-            return <div key={article.slug}>
-              <a href={`${article.slug}`}>{article.title}</a>
-            </div>
-          })}
+          <div className="articles-index">
+            {selectedCategoryArticles.map((article) => {
+              return <div key={article.slug}>
+                <a href={`${article.slug}`}>{article.title}</a>
+              </div>
+            })}
+          </div>
         </div>
         <div>
           <Link href="/articles">
-            <button>See more...</button>
+            <button className="button-white">See More</button>
           </Link>
         </div>
       </div>
