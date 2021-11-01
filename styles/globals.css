@@ -198,6 +198,7 @@ a {
 }
 .featured-article-title {
   font-size: 30px;
+  min-height: 40%;
   padding: 10px 0;
   color: #1C1E1F;
 }
@@ -299,9 +300,15 @@ a {
   height: 72px;
   line-height: 69px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.email-input-box:hover {
+  background-color: #1C1E1F;
+  color: #fff;
 }
 
 /* BUTTONS */
@@ -537,5 +544,8 @@ a {
   }
   .header-wrapper {
     width: calc(100% - 10em);
+  }
+  .featured-article-title {
+    height: 55%;
   }
 }

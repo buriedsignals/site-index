@@ -15,8 +15,7 @@ class NewsletterBox extends React.Component {
             <img src="../static/img/bs_newsletter.png"></img>
           </div>
           <h2>Support our visual journalism by signing up for our newsletter</h2>
-          <div className="email-input-box"><span>YOUR EMAIL</span></div>
-          <button className="button-black">Sign Up</button>
+          <a href="https://buriedsignals.substack.com/" target="_blank" rel="noreferrer" className="email-input-box"><span>SIGN UP</span></a>
         </div>
       );
     }

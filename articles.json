@@ -1,20 +1,20 @@
 [{
-  "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem different",
-  "slug": "https://some-other-site.com/article",
-  "categories": ["INVESTIGATIVE"],
+  "title": "Jigsaw : the internet shutdowns issue",
+  "slug": "https://jigsaw.google.com/the-current/shutdown/",
+  "categories": ["VISUAL"],
   "featured": true,
-  "image": "https://source.unsplash.com/random",
-  "creator": "Disclose"
+  "image": "./static/meta-img/jigsaw-1.jpg",
+  "creator": "Google"
 }, {
-  "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
-  "slug": "https://some-other-site.com/article-2",
-  "categories": ["DOCUMENTARY"],
-  "image": "https://source.unsplash.com/random",
-  "creator": "Collective"
+  "title": "Drowning in Plastic : visualising the world's addiction to plastic bottles.",
+  "slug": "https://graphics.reuters.com/ENVIRONMENT-PLASTIC/0100B275155/index.html",
+  "categories": ["3D"],
+  "image": "./static/meta-img/plastic.png",
+  "creator": "Reuters Graphics"
 }, {
-  "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem title",
-  "slug": "https://some-other-site.com/article-3",
-  "categories": ["DATA VISUALIZATION"],
-  "image": "https://source.unsplash.com/random",
-  "creator": "Collective Two"
+  "title": "Yemen Papers : a leak reveals use of French-made weapons in Yemen.",
+  "slug": "https://made-in-france.disclose.ngo/en/chapter/yemen-papers/",
+  "categories": ["INVESTIGATIVE"],
+  "image": "./static/meta-img/yemen.jpg",
+  "creator": "Disclose NGO"
 }]
