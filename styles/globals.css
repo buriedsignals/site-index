@@ -505,6 +505,7 @@ a {
   }
   .article-title {
     font-size: 24px;
+    height: 60%;
   }
   .articles-index {
     grid-template-columns: 47.5% 47.5%;
