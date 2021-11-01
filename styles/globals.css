@@ -45,7 +45,7 @@ a {
 
 .header-wrapper {
   width: calc(100% - 25em);
-  margin: 0 auto;
+  margin: 0 auto 5em auto;
   text-align: center;
 }
 
@@ -131,9 +131,8 @@ a {
   margin-top: 50px;
 }
 
-
 .index-filters {
-  margin-top: 5em;
+  margin-top: 4em;
   margin-bottom: 2em;
   display: flex;
   color: #636363;
@@ -152,21 +151,31 @@ a {
   grid-column-gap: 5%;
 }
 
-/* ARTICLE CARDS */
-
+/* ARTICLES */
+/* FEATURED ARTICLE */
 .featured-article {
   background-color: white;
   height: 540px;
   position: relative;
 }
+.featured-article:after {
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  right: -40px;
+  width: 61px;
+  height: 77px;
+  transform:rotate(45deg);
+  background-color: #1C1E1F;
+  overflow: hidden;
+}
 
 .featured-article-image {
-  object-fit: none;
+  object-fit: cover;
   object-position: center;
   height: 60%;
   width: 100%;
 }
-
 .featured-article-tag {
   position: absolute;
   padding: 10px 10px;
@@ -187,7 +196,12 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-
+.featured-article-title {
+  font-size: 30px;
+  padding: 10px 0;
+  color: #1C1E1F;
+}
+/* ARTICLE CARDS */
 .article-redirect {
   font-size: 14px;
   position: absolute;
@@ -195,11 +209,6 @@ a {
   right: 20px;
   padding: 8px 10px;
   background-color: #A0FFCC;
-}
-.featured-article-title {
-  font-size: 30px;
-  padding: 10px 0;
-  color: #1C1E1F;
 }
 .article-creator {
   margin-top: 5px;
@@ -212,7 +221,6 @@ a {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .article-image {
   object-fit: none;
   object-position: center;
@@ -230,7 +238,17 @@ a {
   background-color: white;
   position: relative;
 }
-
+.article-card:after {
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  right: -40px;
+  width: 61px;
+  height: 77px;
+  transform:rotate(45deg);
+  background-color: #1C1E1F;
+  overflow: hidden;
+}
 .article-details {
   height: 45%;
   position: absolute;
@@ -249,7 +267,6 @@ a {
   margin: 3em auto;
   max-width: 1168px;
   height: 509px;
-  overflow:hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -338,6 +355,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 8em;
+  margin-bottom: -20px;
 }
 .footer-wrapper img {
   background-color: #131414;
@@ -369,4 +387,142 @@ a {
 }
 .footer-copyright a:hover {
   color: #A0FFCC;
+}
+
+
+@media(min-width: 340px) and (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 18px !important;
+  }
+
+  .navbar-wrapper {
+    padding: 25px 20px;
+  }
+  .navbar-wrapper img {
+    height: 30px;
+  }
+  .index-wrapper {
+    width: calc(100% - 2em);
+    overflow: hidden;
+  }
+  .header-wrapper {
+    width: auto;
+  }
+  .header-wrapper h1 {
+    font-size: 36px;
+  }
+  .featured-article-image {
+    height: 50%;
+  }
+  .featured-article-details {
+    height: 50%;
+    width: 90%;
+  }
+  .featured-article-title {
+    font-size: 28px;
+    height: 55%;
+  }
+  .article-image {
+    height: 50%;
+  }
+  .article-details {
+    height: 50%;
+    width: 90%;
+  }
+  .article-title {
+    font-size: 28px;
+  }
+  .articles-index {
+    grid-template-columns: 100%;
+    grid-row-gap: 3%;
+  }
+  .button-container {
+    margin-top: 10px;
+  }
+  .index-filters {
+    flex-wrap: wrap
+  }
+  .filter-category {
+    margin-top: 1em;
+  }
+  .newsletter-box {
+    max-width: 100%;
+    height: 520px;
+    padding: 30px 30px;
+  }
+  .newsletter-box h2 {
+    font-size: 28px;
+    max-width: 100%;
+  }
+  .email-input-box {
+    width: 100%;
+  }
+  .footer-wrapper {
+    margin-top: 5em;
+  }
+}
+
+@media(min-width: 800px) and (max-width: 1400px) {
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 18px !important;
+  }
+
+  .navbar-wrapper {
+    padding: 25px 30px;
+  }
+  .navbar-wrapper img {
+    height: 30px;
+  }
+  .index-wrapper {
+    width: calc(100% - 2em);
+    overflow: hidden;
+  }
+  .header-wrapper {
+    width: calc(100% - 10em);
+  }
+  .header-wrapper h1 {
+    font-size: 36px;
+  }
+
+  .featured-article-title {
+    font-size: 28px;
+    height: 55%;
+  }
+  .article-image {
+    height: 50%;
+  }
+  .article-details {
+    height: 50%;
+    width: 90%;
+  }
+  .article-title {
+    font-size: 24px;
+  }
+  .articles-index {
+    grid-template-columns: 47.5% 47.5%;
+    grid-row-gap: 3%;
+  }
+  .button-container {
+    margin-top: 10px;
+  }
+  .index-filters {
+    flex-wrap: wrap
+  }
+  .filter-category {
+    margin-top: 1em;
+  }
+  .newsletter-box {
+    max-width: 100%;
+    height: 520px;
+    padding: 30px 30px;
+  }
+  .newsletter-box h2 {
+    font-size: 28px;
+  }
 }
