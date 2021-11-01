@@ -45,7 +45,7 @@ a {
 
 .header-wrapper {
   width: calc(100% - 25em);
-  margin: 0 auto 5em auto;
+  margin: 4em auto 5em auto;
   text-align: center;
 }
 
@@ -410,9 +410,10 @@ a {
   }
   .header-wrapper {
     width: auto;
+    margin-top: 0px;
   }
   .header-wrapper h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .featured-article-image {
     height: 50%;
@@ -485,6 +486,7 @@ a {
   }
   .header-wrapper {
     width: calc(100% - 10em);
+    margin-top: 0px;
   }
   .header-wrapper h1 {
     font-size: 36px;
