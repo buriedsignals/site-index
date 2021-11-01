@@ -4,6 +4,7 @@ import Navigation from '../components/navigation';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import articles from '../articles.json';
+import NewsletterBox from '../components/newsletter-box';
 
 const ArticleCategory = () => {
   const router = useRouter();
@@ -15,6 +16,7 @@ const ArticleCategory = () => {
       <div className="index-wrapper">
         <Header />
         <ArticleList articles={articles} catgory={category} />
+        <NewsletterBox />
       </div> 
       <Footer />
   </div>

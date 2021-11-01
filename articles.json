@@ -1,16 +1,20 @@
 [{
-  "title": "First test article",
-  "slug": "/test-article-01",
-  "categories": ["categoryA", "categoryC"],
+  "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem different",
+  "slug": "https://some-other-site.com/article",
+  "categories": ["INVESTIGATIVE"],
   "featured": true,
-  "deployUrl": "https://buriedsignalsmag.github.io/test-article-01"
+  "image": "https://source.unsplash.com/random",
+  "creator": "Disclose"
 }, {
-  "title": "Second test article",
-  "slug": "/test-article-02",
-  "categories": ["categoryB"],
-  "deployUrl": "https://buriedsignalsmag.github.io/test-article-02"
+  "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+  "slug": "https://some-other-site.com/article-2",
+  "categories": ["DOCUMENTARY"],
+  "image": "https://source.unsplash.com/random",
+  "creator": "Collective"
 }, {
-  "title": "An external article",
-  "categories": ["categoryB", "categoryC"],
-  "slug": "https://some-other-site.com/article"
+  "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem title",
+  "slug": "https://some-other-site.com/article-3",
+  "categories": ["DATA VISUALIZATION"],
+  "image": "https://source.unsplash.com/random",
+  "creator": "Collective Two"
 }]
