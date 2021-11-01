@@ -466,7 +466,7 @@ a {
   }
 }
 
-@media(min-width: 800px) and (max-width: 1400px) {
+@media(min-width: 800px) and (max-width: 1000px) {
   h1 {
     font-size: 36px;
   }
@@ -526,5 +526,15 @@ a {
   }
   .newsletter-box h2 {
     font-size: 28px;
+  }
+}
+
+@media(min-width: 1000px) and (max-width: 1400px) {
+  .index-wrapper {
+    width: calc(100% - 15em);
+    overflow: hidden;
+  }
+  .header-wrapper {
+    width: calc(100% - 10em);
   }
 }
