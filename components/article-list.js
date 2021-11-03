@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-
+import { useRouter } from 'next/router';
 
 class ArticleList extends React.Component {
 
@@ -11,7 +11,23 @@ class ArticleList extends React.Component {
     this.state = {
       selectedCategory: props.category || 'all'
     }
-    // this.categoryAllHandler = this.categoryAllHandler.bind(this);
+    this.categoryAllHandler = this.categoryAllHandler.bind(this);
+    this.categoryHandler = this.categoryHandler.bind(this);
+  }
+
+  categoryAllHandler(e) {
+    const filters = document.querySelectorAll(".filter-category");
+    console.log(filters);
+    filters.forEach(filter => filter.style.color = "#636363");
+    e.target.style.color = "white";
+    this.setState({selectedCategory: 'all'});
+  };
+  categoryHandler(category, e) {
+    const filters = document.querySelectorAll(".filter-category");
+    console.log(filters);
+    filters.forEach(filter => filter.style.color = "#636363");
+    e.target.style.color = "white";
+    this.setState({ selectedCategory: category });
   }
 
   render() {
@@ -29,11 +45,6 @@ class ArticleList extends React.Component {
     const unfeaturedArticles = allArticles.filter(article => !article.featured);
 
     const selectedCategoryArticles = this.state.selectedCategory === 'all' ? unfeaturedArticles : unfeaturedArticles.filter((article) => article.categories.includes(this.state.selectedCategory));
-
-    // categoryAllHandler(e) {
-    //   e.target.classList.toggle("active");
-    //   // setState
-    // };
 
     // need to use in(e) => categoryAllHandler(e)
     return (
@@ -60,19 +71,22 @@ class ArticleList extends React.Component {
         </div>
         <div>
           <div className="index-filters">
-            <div className={'filter-category'} onClick={() => this.setState({ selectedCategory: "all" })}>
+            <div className="filter-category" onClick={this.categoryAllHandler}>
               All
             </div>
             {allCategories.map((category) => {
-              return <div key={category} className={'filter-category'} onClick={() => this.setState({ selectedCategory: category })}>
+              return <div key={category} className="filter-category" onClick={(e) => this.categoryHandler(category, e)}>
                 {category}
               </div>
             })}
           </div>
           <div className="articles-index">
             {selectedCategoryArticles.map((article) => {
-              const creator = article.creator.toUpperCase();
+                const creator = article.creator.toUpperCase();
                 const category = article.categories[0].toUpperCase();
+                const router = useRouter()
+                // IF ROUTE IS CATEGORY -> prefix article.image with "../"
+                // uppercase categories, lowercase in json
                 return <a href={`${article.slug}`} key={article.slug}>
                   <div className="article-card">
                   <div className="article-redirect">{article.deployURL? "" : <FontAwesomeIcon icon={faExternalLinkAlt} />}</div>

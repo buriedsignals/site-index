@@ -1,4 +1,5 @@
 const React = require('react');
+import Link from 'next/link'
 
 class Navigation extends React.Component {
 
@@ -11,9 +12,9 @@ class Navigation extends React.Component {
   
       return (
         <div className="navbar-wrapper">
-            <div href="/" className="navbar-logo">
-                <img src="../static/img/nav-logo.png"></img>
-            </div>
+            <Link href="/" className="navbar-logo" passHref>
+                <a><img src="../static/img/nav-logo.png"></img></a>
+            </Link>
             <div className="navbar-links">
                 <a href="/about">ABOUT</a>
                 <a href="/studio">STUDIO</a>

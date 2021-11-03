@@ -7,7 +7,11 @@ const ArticleCategory = (props) => {
   const router = useRouter();
   const { category } = router.query;
 
-  return <ArticleList articles={articles} category={category || props.category} />
+  return (
+    <div>
+    <ArticleList articles={articles} category={category || props.category} />
+    </div>
+  );
 }
 
 export async function getStaticProps(context) {
