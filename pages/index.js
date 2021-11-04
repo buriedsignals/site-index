@@ -15,13 +15,13 @@ const ArticleCategory = () => {
     <div className="global-wrapper">
       <Navigation />
       <Head>
-        <meta />
+        <meta title="Buried Signals" />
       </Head>
       <div className="index-wrapper">
         <Header />
         <ArticleList articles={articles} catgory={category} />
-        <NewsletterBox />
       </div> 
+      <NewsletterBox />
       <Footer />
   </div>
   )

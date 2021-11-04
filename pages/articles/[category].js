@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import ArticleList from '../../components/article-list-archive';
+import ArticleListArchive from '../../components/article-list-archive';
 import articles from '../../articles.json';
 const allCategories = [...(new Set(articles.flatMap(article => article.categories)))];
 
@@ -9,7 +9,7 @@ const ArticleCategory = (props) => {
 
   return (
     <div>
-    <ArticleList articles={articles} category={category || props.category} />
+    <ArticleListArchive articles={articles} category={category || props.category} />
     </div>
   );
 }

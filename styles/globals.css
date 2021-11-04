@@ -50,6 +50,10 @@ li {
   box-sizing: border-box;
 }
 
+.global-wrapper {
+  overflow: hidden;
+}
+
 .index-wrapper {
   width: calc(100% - 30em);
   margin: 0 auto;
@@ -229,6 +233,7 @@ li {
   display: grid;
   grid-template-columns: 47.5% 47.5%;
   grid-column-gap: 5%;
+  grid-row-gap: 5%;
 }
 
 /* ARTICLES */
@@ -345,7 +350,7 @@ li {
 .newsletter-box {
   position:relative;
   background-color: #A0FFCC;
-  margin: 3em auto;
+  margin: 5em auto;
   max-width: 1168px;
   height: 509px;
   display: flex;
@@ -683,5 +688,14 @@ li {
   }
   .featured-article-title {
     height: 55%;
+  }
+  .newsletter-box {
+    max-width: 90%;
+  }
+  .article-details {
+    width: 90%;
+  }
+  .article-title {
+    font-size: 24px;
   }
 }

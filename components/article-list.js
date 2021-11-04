@@ -4,6 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router';
 
+const ArticleListRouter = (props) => {
+  const {asPath, pathname} = useRouter();
+  console.log('path', asPath);
+  console.log('path', pathname);
+  return (
+    <ArticleList {...props} />
+  );
+}
+
 class ArticleList extends React.Component {
 
   constructor(props) {
@@ -76,7 +85,7 @@ class ArticleList extends React.Component {
             </div>
             {allCategories.map((category) => {
               return <div key={category} className="filter-category" onClick={(e) => this.categoryHandler(category, e)}>
-                {category}
+                {category.toUpperCase()}
               </div>
             })}
           </div>
@@ -84,10 +93,9 @@ class ArticleList extends React.Component {
             {selectedCategoryArticles.map((article) => {
                 const creator = article.creator.toUpperCase();
                 const category = article.categories[0].toUpperCase();
-                const router = useRouter()
                 // IF ROUTE IS CATEGORY -> prefix article.image with "../"
                 // uppercase categories, lowercase in json
-                return <a href={`${article.slug}`} key={article.slug}>
+                return <a href={`${article.slug}`} key={article.slug} target="_blank" rel="noreferrer">
                   <div className="article-card">
                   <div className="article-redirect">{article.deployURL? "" : <FontAwesomeIcon icon={faExternalLinkAlt} />}</div>
                   <img className="article-image" src={article.image}></img>
@@ -111,4 +119,4 @@ class ArticleList extends React.Component {
   }
 }
 
-export default ArticleList;
+export default ArticleListRouter;

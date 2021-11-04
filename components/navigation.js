@@ -5,15 +5,21 @@ class Navigation extends React.Component {
 
     constructor(props) {
       super(props);
-      console.log('Initializing Nav.')
+      this.state = {
+        logoPath: props.navLogo || '../static/img/nav-logo.png'
+      }
+      console.log('Initializing Nav.');
     }
-  
+    
+    // handleLogoPath() {
+    //   if (this.props.)
+    // }
     render() {
-  
+      const path = this.state.logoPath;
       return (
         <div className="navbar-wrapper">
             <Link href="/" className="navbar-logo" passHref>
-                <a><img src="../static/img/nav-logo.png"></img></a>
+                <a><img src={path}></img></a>
             </Link>
             <div className="navbar-links">
                 <a href="/about">ABOUT</a>

@@ -1,7 +1,7 @@
 [{
   "title": "Jigsaw : the internet shutdowns issue",
   "slug": "https://jigsaw.google.com/the-current/shutdown/",
-  "categories": ["VISUAL"],
+  "categories": ["Visual"],
   "featured": true,
   "image": "./static/meta-img/jigsaw-1.jpg",
   "imagePath": "../static/meta-img/jigsaw-1.jpg",
@@ -16,7 +16,7 @@
 }, {
   "title": "Yemen Papers : a leak reveals use of French-made weapons in Yemen.",
   "slug": "https://made-in-france.disclose.ngo/en/chapter/yemen-papers/",
-  "categories": ["INVESTIGATIVE"],
+  "categories": ["Investigative"],
   "image": "./static/meta-img/yemen.jpg",
   "imagePath": "../static/meta-img/yemen.jpg",
   "creator": "Disclose NGO"

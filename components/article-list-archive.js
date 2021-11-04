@@ -4,23 +4,34 @@ import Link from 'next/link'
 import Navigation from './navigation';
 import Footer from './footer';
 import Head from 'next/head';
-import footerLogo from '../static/img/bs_footer.png';
-import navLogo from '../static/img/nav-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 const ArticleListRouter = (props) => {
   const router = useRouter()
-  return (
-    <div className="global-wrapper">
-    <Navigation navLogo={navLogo} />
-    <Head></Head>
-      <div className="index-wrapper">
-      <ArticleList {...props} router={router} />
+  const {pathname} = useRouter()
+  let navLogo;
+  (pathname == "/articles/[category]") ? navLogo = "../../static/img/nav-logo.png" : navLogo = "../static/img/nav-logo.png";
+  let footerLogo;
+  (pathname == "/articles/[category]") ? footerLogo = "../../static/img/bs_footer.png" : footerLogo = "../static/img/bs_footer.png";
+
+  if (pathname == "/articles/[category]") {
+    return (
+      <div className="global-wrapper">
+      <Navigation navLogo={navLogo} />
+      <Head></Head>
+        <div className="index-wrapper">
+        <ArticleList {...props} router={router} path={pathname} />
+        </div>
+        <Footer footerLogo={footerLogo} />
       </div>
-      <Footer footerLogo={footerLogo} />
-    </div>
-  );
+    );
+  } else {
+    return (
+        <ArticleList {...props} router={router} path={pathname} />
+    );
+  }
+  
 }
 
 class ArticleList extends React.Component {
@@ -29,7 +40,8 @@ class ArticleList extends React.Component {
     super(props);
 
     this.state = {
-      selectedCategory: props.category || 'all'
+      selectedCategory: props.category || 'all',
+      path: props.pathname
     }
     this.categoryAllHandler = this.categoryAllHandler.bind(this);
     this.categoryHandler = this.categoryHandler.bind(this);
@@ -61,6 +73,7 @@ class ArticleList extends React.Component {
       return a.localeCompare(b);
     })
 
+    const currentPath = props.path;
     const selectedCategoryArticles = props.category === 'all' ? allArticles : allArticles.filter((article) => article.categories.includes(props.category));
 
     return (
@@ -74,7 +87,7 @@ class ArticleList extends React.Component {
           {allCategories.map((category) => {
             return <div key={category} className="filter-category" onClick={(e) => this.categoryHandler(category, e)}>
               <Link href={`/articles/${category}`} className="filter-category-a">
-                {category}
+                {category.toUpperCase()}
               </Link>
             </div>
           })}
@@ -83,9 +96,9 @@ class ArticleList extends React.Component {
           {selectedCategoryArticles.map((article) => {
             const creator = article.creator.toUpperCase();
             const category = article.categories[0].toUpperCase();
-            const imagePath = article.imagePath
-            console.log("article", imagePath);
-            return <a href={`${article.slug}`} key={article.slug}>
+            let imagePath;
+            (currentPath == "/articles/[category]") ? imagePath = "../" + article.imagePath : imagePath = article.imagePath;
+            return <a href={`${article.slug}`} key={article.slug} target="_blank" rel="noreferrer">
               <div className="article-card">
               <div className="article-redirect">{article.deployURL? "" : <FontAwesomeIcon icon={faExternalLinkAlt} />}</div>
               <img className="article-image" src={imagePath}></img>
