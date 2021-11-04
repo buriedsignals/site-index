@@ -5,10 +5,6 @@ module.exports = {
   trailingSlash: true,
   async rewrites() {
     return [
-      {
-        "source": "/about/:path*",
-        "destination": "https://buried-signals-about.vercel.app/:path*"
-      },
       ...articles.filter(article => {
         return !article.slug.startsWith('http://') && !article.slug.startsWith('https://');
       }).map((article) => {

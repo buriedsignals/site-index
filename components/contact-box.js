@@ -3,36 +3,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faTwitter, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
-class Footer extends React.Component {
+class ContactBox extends React.Component {
 
     constructor(props) {
       super(props);
-      this.state = {
-        footerPath: props.footerLogo || "../static/img/bs_footer.png"
-      }
-      console.log('Initializing Footer.')
+      console.log('Initializing contact-box.')
     }
   
     render() {
-      const footerLogo = this.state.footerPath;
   
       return (
-        <div className="footer-wrapper">
-          <div className="footer-socials">
+        <div className="contact-box-container">
+            <div className="contact-box-header"><h2>Interested in working with us? Get in touch!</h2></div>
+            <div className="contact-box-socials">
             <a href="https://discord.gg/XA6mqnyk" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faDiscord} /></a>
             <a href="https://twitter.com/buriedsignals" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faTwitter} /></a>
             <a href="https://instagram.com/buriedsignals" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="mailto:tom@buriedsignals.com" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faEnvelope} /></a>
-          </div>
-          <div className="footer-logo-wrapper">
-            <img src={footerLogo} />
-          </div>
-          <div className="footer-copyright">
-          © 2021 Buried Signals. See <a href="/privacy">Privacy and Terms Notice</a>.
-          </div>
+            </div>
         </div>
       );
     }
   }
   
-  module.exports = Footer;
+  module.exports = ContactBox;

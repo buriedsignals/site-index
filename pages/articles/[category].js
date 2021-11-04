@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import ArticleList from '../../components/article-list-archive';
+import ArticleListArchive from '../../components/article-list-archive';
 import articles from '../../articles.json';
 const allCategories = [...(new Set(articles.flatMap(article => article.categories)))];
 
@@ -7,7 +7,11 @@ const ArticleCategory = (props) => {
   const router = useRouter();
   const { category } = router.query;
 
-  return <ArticleList articles={articles} category={category || props.category} />
+  return (
+    <div>
+    <ArticleListArchive articles={articles} category={category || props.category} />
+    </div>
+  );
 }
 
 export async function getStaticProps(context) {

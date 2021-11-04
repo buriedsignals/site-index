@@ -8,7 +8,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
 
 /* GLOBAL STYLES */
-h1, h2, p, a, div {
+h1, h2, p, a, div, ul, li {
   font-family: 'Space Grotesk', sans-serif;
 }
 h1, h2 {
@@ -34,8 +34,24 @@ a {
   /* text-decoration: none; */
 }
 
+
+ul {
+  font-size: 20px;
+  color: white;
+}
+
+li {
+  color: white;
+  line-height: 2;
+  font-size: 20px;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.global-wrapper {
+  overflow: hidden;
 }
 
 .index-wrapper {
@@ -99,6 +115,29 @@ a {
   text-decoration: none;
 }
 
+/* PAGES HEADER */
+.pages-header-container {
+  width: 100%;
+  background-color: #A0FFCC;
+  height: 520px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pages-header-wrapper {
+  width: calc(100% - 30em);
+  margin: auto auto;
+  text-align: center;
+  background-color: #A0FFCC;
+}
+
+.pages-header-wrapper h1 {
+  font-size: 38px;
+  color: #1C1E1F;
+  font-weight: 300;
+  user-select: none;
+}
+
 /* NAVIGATION */
 .navbar-wrapper {
   padding: 35px 60px;
@@ -126,6 +165,51 @@ a {
   text-decoration: none;
 }
 
+/* PAGES NAVBAR */
+
+.navbar-wrapper-pages {
+  padding: 35px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A0FFCC;
+}
+.navbar-logo-pages:hover {
+  cursor: pointer;
+}
+.navbar-logo-pages img {
+  background-color: #A0FFCC !important;
+  display: inline !important;
+  margin: 4px 0 0 0 !important;
+  height: 35px;
+}
+.navbar-links-pages a {
+  margin-left: 30px;
+  color: #1C1E1F;
+  font-size: 14px;
+  text-decoration: none;
+}
+.navbar-links-pages a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* PAGES CONTENT */
+.pages-wrapper {
+  max-width: calc(100vh - 5em) !important;
+  margin: 0 auto !important;
+}
+
+.pages-wrapper h1 {
+  margin-top: 2em;
+  color: white;
+}
+
+.pages-wrapper p {
+  color: white;
+  font-size: 20px !important;
+}
+
 /* ARTICLES INDEX */
 .articles-index-wrapper {
   margin-top: 50px;
@@ -149,6 +233,7 @@ a {
   display: grid;
   grid-template-columns: 47.5% 47.5%;
   grid-column-gap: 5%;
+  grid-row-gap: 5%;
 }
 
 /* ARTICLES */
@@ -265,7 +350,7 @@ a {
 .newsletter-box {
   position:relative;
   background-color: #A0FFCC;
-  margin: 3em auto;
+  margin: 5em auto;
   max-width: 1168px;
   height: 509px;
   display: flex;
@@ -397,6 +482,53 @@ a {
 }
 
 
+/* CONTACT BOX */
+
+.contact-box-container {
+  margin-top: 5em;
+  position: relative;
+  background-color: #A0FFCC;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  text-align: center;
+}
+.contact-box-container:after {
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  right: -40px;
+  width: 61px;
+  height: 77px;
+  transform:rotate(45deg);
+  background-color: #1C1E1F;
+}
+.contact-box-header {
+  margin-bottom: 30px;
+}
+.contact-box-header h2 {
+  color: #151515;
+  font-size: 30px;
+}
+.contact-box-socials {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-box-socials a {
+  color: #151515;
+  font-size: 24px;
+}
+.contact-box-socials a:hover {
+  cursor: pointer;
+  color: #fff; 
+}
+
 @media(min-width: 340px) and (max-width: 800px) {
   h1 {
     font-size: 36px;
@@ -471,6 +603,12 @@ a {
   .footer-wrapper {
     margin-top: 5em;
   }
+  .contact-box-container {
+    padding: 0 5%;
+  }
+  .contact-box-header h2 {
+    font-size: 24px;
+  }
 }
 
 @media(min-width: 800px) and (max-width: 1000px) {
@@ -527,13 +665,16 @@ a {
   .filter-category {
     margin-top: 1em;
   }
+  .filter-category-a {
+    text-decoration: none !important;
+  }
   .newsletter-box {
     max-width: 100%;
     height: 520px;
     padding: 30px 30px;
   }
   .newsletter-box h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -547,5 +688,14 @@ a {
   }
   .featured-article-title {
     height: 55%;
+  }
+  .newsletter-box {
+    max-width: 90%;
+  }
+  .article-details {
+    width: 90%;
+  }
+  .article-title {
+    font-size: 24px;
   }
 }
