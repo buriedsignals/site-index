@@ -28,12 +28,11 @@ const ArticleCategory = () => {
     <div className="global-wrapper">
       <Navigation />
       <Head>
-        <title>Buried Signals</title>
-        <meta title="Buried Signals" />
         <meta name="title" content="Buried Signals" />
         <meta name="description" content="A repository of visual experiments in journalism." />
         <meta image src="../static/img/meta.png" />
         <meta property="og:image" content="../static/img/meta.png" />
+        <title>Buried Signals</title>
         {handleAnalytics}
       </Head>
       <div className="index-wrapper">
