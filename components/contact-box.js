@@ -14,7 +14,7 @@ class ContactBox extends React.Component {
   
       return (
         <div className="contact-box-container">
-            <div className="contact-box-header"><h2>Interested in working with us? Get in touch!</h2></div>
+            <div className="contact-box-header"><h2>Interested in working with us? <a href="mailto:tom@buriedsignals.com">Get in touch!</a></h2></div>
             <div className="contact-box-socials">
             <a href="https://discord.gg/XA6mqnyk" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faDiscord} /></a>
             <a href="https://twitter.com/buriedsignals" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faTwitter} /></a>

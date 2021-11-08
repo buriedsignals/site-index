@@ -8,11 +8,13 @@ class HeaderPages extends React.Component {
     }
   
     render() {
+
+      const title = this.props.title;
   
       return (
         <div className="pages-header-container">
           <div className="pages-header-wrapper">
-            <h1>We’re a creative studio specialised in visual essays and interactive documentaries.</h1>
+            <h1>{title}</h1>
           </div>
         </div>
       );
