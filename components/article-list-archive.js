@@ -96,12 +96,12 @@ class ArticleList extends React.Component {
           {selectedCategoryArticles.map((article) => {
             const creator = article.creator.toUpperCase();
             const category = article.categories[0].toUpperCase();
-            let imagePath;
-            (currentPath == "/articles/[category]") ? imagePath = "../" + article.imagePath : imagePath = article.imagePath;
+            // let imagePath;
+            // (currentPath == "/articles/[category]") ? imagePath = "../" + article.imagePath : imagePath = article.imagePath;
             return <a href={`${article.slug}`} key={article.slug} target="_blank" rel="noreferrer">
               <div className="article-card">
               <div className="article-redirect">{article.deployURL? "" : <FontAwesomeIcon icon={faExternalLinkAlt} />}</div>
-              <img className="article-image" src={imagePath}></img>
+              <img className="article-image" src={article.image}></img>
               <div className="article-details">
                 <div className="article-category">{category}</div>
                 <div className="article-title">{article.title}</div>
