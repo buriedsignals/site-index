@@ -1,4 +1,5 @@
 const React = require('react');
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faTwitter, faDiscord } from "@fortawesome/free-brands-svg-icons";
@@ -28,7 +29,7 @@ class Footer extends React.Component {
             <img src={footerLogo} />
           </div>
           <div className="footer-copyright">
-          © 2021 Buried Signals. See <a href="/privacy">Privacy and Terms Notice</a>.
+          © 2021 Buried Signals. See <Link href="/privacy">Privacy and Terms Notice</Link>.
           </div>
         </div>
       );

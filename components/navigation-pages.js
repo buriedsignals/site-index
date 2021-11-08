@@ -7,7 +7,7 @@ class NavigationPages extends React.Component {
       super(props);
       console.log('Initializing Nav-pages.')
     }
-  
+    
     render() {
   
       return (
@@ -16,8 +16,8 @@ class NavigationPages extends React.Component {
                 <a><img src="../static/img/nav-logo-black.png"></img></a>
             </Link>
             <div className="navbar-links-pages">
-                <a href="/about">ABOUT</a>
-                <a href="/studio">STUDIO</a>
+                <Link href="/about">ABOUT</Link>
+                <Link href="/studio">STUDIO</Link>
             </div>
         </div>
       );
