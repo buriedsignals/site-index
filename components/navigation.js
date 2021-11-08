@@ -11,9 +11,6 @@ class Navigation extends React.Component {
       console.log('Initializing Nav.');
     }
     
-    // handleLogoPath() {
-    //   if (this.props.)
-    // }
     render() {
       const path = this.state.logoPath;
       return (
@@ -22,8 +19,8 @@ class Navigation extends React.Component {
                 <a><img src={path}></img></a>
             </Link>
             <div className="navbar-links">
-                <a href="/about">ABOUT</a>
-                <a href="/studio">STUDIO</a>
+              <Link href="/about">ABOUT</Link>
+              <Link href="/studio">STUDIO</Link>
             </div>
         </div>
       );
