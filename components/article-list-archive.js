@@ -19,7 +19,13 @@ const ArticleListRouter = (props) => {
     return (
       <div className="global-wrapper">
       <Navigation navLogo={navLogo} />
-      <Head></Head>
+      <Head>
+        <meta name="title" content="Articles | Buried Signals" />
+        <meta name="description" content="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces." />
+        <meta image src="../static/img/meta.png" />
+        <meta property="og:image" content="../static/img/meta.png" />
+        <title>Articles | Buried Signals</title>
+      </Head>
         <div className="index-wrapper">
         <ArticleList {...props} router={router} path={pathname} />
         </div>
@@ -28,7 +34,16 @@ const ArticleListRouter = (props) => {
     );
   } else {
     return (
+      <div>
+        <Head>
+          <meta name="title" content="Articles | Buried Signals" />
+          <meta name="description" content="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces." />
+          <meta image src="../static/img/meta.png" />
+          <meta property="og:image" content="../static/img/meta.png" />
+          <title>Articles | Buried Signals</title>
+        </Head>
         <ArticleList {...props} router={router} path={pathname} />
+      </div>
     );
   }
   

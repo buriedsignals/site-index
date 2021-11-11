@@ -17,12 +17,14 @@ const Studio = () => {
         <meta description="Creative studio specialised in visual essays and web documentaries." />
         <meta image src="../static/img/meta.png" />
       </Head>
-      <HeaderPages title="We’re a creative production studio specialised in building visual essays and web documentaries." />
+      <HeaderPages title="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces." />
       <div className="pages-wrapper">
+        <div className="pages-text-container">
         <h1>The Studio</h1>
         <p>We craft <a href="https://en.wikipedia.org/wiki/Explorable_explanation" target="_blank" rel="noreferrer">visual essays</a>, <a href="https://en.wikipedia.org/wiki/Web_documentary" target="_blank" rel="noreferrer">web documentaries</a> and choice-driven narratives by combining the audio, visual, and interactive capabilities of dynamic media.</p>
         <p>Using capabilities in 3D, data visualisation, video, interaction design and code we have produced work for commercial or institutional clients.</p>
         <p>Interactive articles and video are proven to help boost engagement, time spent and virality when compared to static alternatives, both of these metrics are predictive of successful learning outcomes for readers.</p>
+        </div>
         <Clients />
         <ContactBox />
       </div> 
