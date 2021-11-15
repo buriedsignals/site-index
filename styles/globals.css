@@ -125,7 +125,7 @@ li {
 }
 
 .pages-header-wrapper {
-  width: calc(100% - 30em);
+  width: calc(100vh - 5em);
   margin: auto auto;
   text-align: center;
   background-color: #A0FFCC;
@@ -538,7 +538,29 @@ li {
   cursor: pointer;
   color: #fff; 
 }
+.clients-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.clients-wrapper h3 {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.clients-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  align-items: center;
+}
+.clients-row img {
+  height: 40px;
+}
 
+/* MEDIA QUERIES */
 @media(min-width: 340px) and (max-width: 800px) {
   h1 {
     font-size: 36px;

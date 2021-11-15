@@ -32,12 +32,11 @@ const About = () => {
         <meta image src="../static/img/meta.png" />
         {handleAnalytics}
       </Head>
-      <HeaderPages title="This publication curates and produces creative experiments in visual storytelling." />
+      <HeaderPages title="This publication curates creative experiments in visual storytelling." />
       <div className="pages-wrapper">
         <div className="pages-text-container">
           <h1>The Publication</h1>
-          <p>Buried Signals is a platform to explore visual concepts while exercising technical and creative disciplines combined with open-source investigative techniques.</p> 
-          <p>We curate extraordinary visual or interactive work which seeks to communicate complex stories or data efficiently.</p>
+          <p>Buried Signals is a platform to spotlight extraordinary visual or interactive essays which communicate complex stories or data efficiently, sometimes in combination with open-source investigative techniques.</p> 
           <p>This publication is built atop <a href="https://idyll-lang.org/docs/getting-started">Idyll</a>, an open-source toolkit for writing interactive articles. All of our code is visible on Github, if you&apos;re interested in contributing don&apos;t hesitate to reach out! Any work we&apos;ve published can be challenged on Discord.</p>
           <h1>Manifesto</h1>
           <p>To abstain from false claims of objectivity we try to keep our identities small and apply the tenets of Jim Lehrer’s journalism principles. We&apos;re applying the following principles:</p>
