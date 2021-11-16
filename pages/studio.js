@@ -16,7 +16,7 @@ const Studio = () => {
         <meta description="Creative studio specialised in visual essays and web documentaries." />
         <meta image src="../static/img/meta.png" />
       </Head>
-      <HeaderPages title="We craft explorable explanations, web documentaries and interfaces." />
+      <HeaderPages title="We craft visual essays, interactive video and web documentaries." />
       <div className="pages-wrapper">
         <div className="pages-text-container">
         <h1>The Studio</h1>

@@ -10,7 +10,7 @@ class Clients extends React.Component {
     render() {
       return (
         <div className="clients-wrapper">
-          <h3>CLIENTS</h3>
+          <h3>THEY WORKED WITH US</h3>
           <div className="clients-row">
             <img src="../static/logos/redbull.png" />
             <img src="../static/logos/hbo.png" />
