@@ -64,14 +64,12 @@ class ArticleList extends React.Component {
 
   categoryAllHandler(e) {
     const filters = document.querySelectorAll(".filter-category");
-    console.log(filters);
     filters.forEach(filter => filter.style.color = "#636363");
     e.target.style.color = "white";
     this.setState({selectedCategory: 'all'});
   };
   categoryHandler(category, e) {
     const filters = document.querySelectorAll(".filter-category");
-    console.log(filters);
     filters.forEach(filter => filter.style.color = "#636363");
     e.target.style.color = "white";
     this.setState({ selectedCategory: category });

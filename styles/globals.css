@@ -125,7 +125,7 @@ li {
 }
 
 .pages-header-wrapper {
-  width: calc(100% - 30em);
+  width: calc(100vh - 5em);
   margin: auto auto;
   text-align: center;
   background-color: #A0FFCC;
@@ -214,7 +214,15 @@ li {
 .articles-index-wrapper {
   margin-top: 50px;
 }
+.articles-index {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-column-gap: 5%;
+  grid-row-gap: 25px;
+  margin-bottom: 5%;
+}
 
+/* FILTERS */
 .index-filters {
   margin-top: 4em;
   margin-bottom: 2em;
@@ -224,17 +232,16 @@ li {
 
 .filter-category {
   margin-right: 15px;
+  margin-top: 1em;
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
 }
-
-.articles-index {
-  display: grid;
-  grid-template-columns: 47.5% 47.5%;
-  grid-column-gap: 5%;
-  grid-row-gap: 25px;
-  margin-bottom: 5%;
+.filter-category a {
+  text-decoration: none;
+}
+.filter-category a:hover {
+  color: white;
 }
 
 /* ARTICLES */
@@ -538,7 +545,34 @@ li {
   cursor: pointer;
   color: #fff; 
 }
+.contact-box-header a:hover {
+  color: white;
+}
 
+/* CLIENTS WRAPPER */
+.clients-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.clients-wrapper h3 {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.clients-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  align-items: center;
+}
+.clients-row img {
+  height: 40px;
+}
+
+/* MEDIA QUERIES */
 @media(min-width: 340px) and (max-width: 800px) {
   h1 {
     font-size: 36px;
@@ -618,9 +652,6 @@ li {
   .index-filters {
     flex-wrap: wrap
   }
-  .filter-category {
-    margin-top: 1em;
-  }
   .newsletter-box {
     max-width: 100%;
     height: 520px;
@@ -652,6 +683,12 @@ li {
   .pages-wrapper li {
     line-height: 1.5;
     font-size: 16px;
+  }
+  .clients-row {
+    justify-content: space-around;
+  }
+  .clients-row img {
+    height: 25px;
   }
 }
 
@@ -706,12 +743,6 @@ li {
   .index-filters {
     flex-wrap: wrap
   }
-  .filter-category {
-    margin-top: 1em;
-  }
-  .filter-category-a {
-    text-decoration: none !important;
-  }
   .newsletter-box {
     max-width: 100%;
     height: 520px;
@@ -719,6 +750,9 @@ li {
   }
   .newsletter-box h2 {
     font-size: 26px;
+  }
+  .clients-row {
+    justify-content: space-around;
   }
 }
 
@@ -741,5 +775,8 @@ li {
   }
   .article-title {
     font-size: 24px;
+  }
+  .clients-row {
+    justify-content: space-around;
   }
 }
