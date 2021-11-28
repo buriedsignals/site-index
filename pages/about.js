@@ -69,8 +69,8 @@ const About = () => {
           </p>
           <h1 className="typography-paragraph-header">Manifesto</h1>
           <p className="typography-paragraph">
-            To abstain from false claims of objectivity I will try to keep my
-            <a href="http://www.paulgraham.com/identity.html" target="_blank" rel="noreferrer">identity small</a> and apply the following journalism principles on any work we publish ourselves, tenets 2 and 6 whenever possible on essays we curate.
+            To abstain from false claims of objectivity I will try to keep my 
+            <a href="http://www.paulgraham.com/identity.html" target="_blank" rel="noreferrer">identity small</a> and apply the following journalism principles on any work we publish ourselves. Tenets 2 and 6 will need to be excluded from essays we curate.
           </p>
           <Spacer multiplier={2} />
           <ol>
