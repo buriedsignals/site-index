@@ -8,14 +8,10 @@ class Footer extends React.Component {
 
     constructor(props) {
       super(props);
-      this.state = {
-        footerPath: props.footerLogo || "../static/img/bs_footer.png"
-      }
       console.log('Initializing Footer.')
     }
   
     render() {
-      const footerLogo = this.state.footerPath;
   
       return (
         <div className="footer-wrapper">
@@ -26,7 +22,7 @@ class Footer extends React.Component {
             <a href="mailto:tom@buriedsignals.com" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faEnvelope} /></a>
           </div>
           <div className="footer-logo-wrapper">
-            <img src={footerLogo} />
+            <img src="/img/bs_footer.svg" />
           </div>
           <div className="footer-copyright">
           © 2021 Buried Signals. See <Link href="/privacy">Privacy and Terms Notice</Link>.
