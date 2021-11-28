@@ -789,3 +789,7 @@ li {
     justify-content: space-around;
   }
 }
+
+.svg-inline--fa {
+  max-height: 20px;
+}
