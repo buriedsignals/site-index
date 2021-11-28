@@ -4,8 +4,8 @@ import Link from "next/link";
 import Navbar from "./navbar/navbar";
 import Footer from "./footer";
 import Head from "next/head";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import ArticleCard from "./article-card/article-card";
+import Header from "./header";
 
 const ArticleListRouter = (props) => {
   const router = useRouter();
@@ -33,6 +33,7 @@ const ArticleListRouter = (props) => {
           <meta property="og:image" content="../static/img/meta.png" />
           <title>Articles | Buried Signals</title>
         </Head>
+        <h1 className="typography-page-header">Archive</h1>
         <div className="index-wrapper">
           <ArticleList {...props} router={router} path={pathname} />
         </div>
@@ -52,6 +53,7 @@ const ArticleListRouter = (props) => {
           <meta property="og:image" content="../static/img/meta.png" />
           <title>Articles | Buried Signals</title>
         </Head>
+        <h1 className="typography-page-header">Archive</h1>
         <ArticleList {...props} router={router} path={pathname} />
       </div>
     );
@@ -119,34 +121,7 @@ class ArticleList extends React.Component {
         </div>
         <div className="articles-index">
           {selectedCategoryArticles.map((article) => {
-            const creator = article.creator.toUpperCase();
-            const category = article.categories[0].toUpperCase();
-            // let imagePath;
-            // (currentPath == "/articles/[category]") ? imagePath = "../" + article.imagePath : imagePath = article.imagePath;
-            return (
-              <a
-                href={`${article.slug}`}
-                key={article.slug}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="article-card">
-                  <div className="article-redirect">
-                    {article.deployURL ? (
-                      ""
-                    ) : (
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
-                    )}
-                  </div>
-                  <img className="article-image" src={article.image}></img>
-                  <div className="article-details">
-                    <div className="article-category">{category}</div>
-                    <div className="article-title">{article.title}</div>
-                    <div className="article-creator">CREATOR: {creator}</div>
-                  </div>
-                </div>
-              </a>
-            );
+            return <ArticleCard key={article.slug} article={article} />;
           })}
         </div>
       </div>

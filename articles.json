@@ -1,41 +1,38 @@
-[{
-  "title": "Jigsaw : the internet shutdowns issue",
-  "slug": "https://jigsaw.google.com/the-current/shutdown/",
-  "categories": ["Visual"],
-  "featured": true,
-  "image": "https://jigsaw.google.com/static/images/social-share.jpg?cache=df11f5c",
-  "imagePath": "https://jigsaw.google.com/static/images/social-share.jpg?cache=df11f5c",
-  "creator": "Google"
-}, 
-{
-  "title": "The Corporations Behind Climate Change.",
-  "slug": "https://parametric.press/issue-02/corporations/",
-  "categories": ["Dataviz"],
-  "image": "https://parametric.press/issue-02/corporations/static/images/share.png",
-  "imagePath": "",
-  "creator": "Parametric Press"
-}, 
-{
-  "title": "Travel Restrictions: today's international travel restrictions.",
-  "slug": "https://www.travelrestrictionstoday.heshameissa.com/",
-  "categories": ["3D"],
-  "image": "https://hesham-website.s3.amazonaws.com/globe-preview-new.png",
-  "imagePath": "https://hesham-website.s3.amazonaws.com/globe-preview-new.png",
-  "creator": "Hesham Eissa"
-},
-{
-  "title": "Drowning in Plastic : visualising the world's addiction to plastic bottles.",
-  "slug": "https://graphics.reuters.com/ENVIRONMENT-PLASTIC/0100B275155/index.html",
-  "categories": ["3D"],
-  "image": "https://graphics.reuters.com/ENVIRONMENT-PLASTIC/0100B275155/images/share-card.png",
-  "imagePath": "https://graphics.reuters.com/ENVIRONMENT-PLASTIC/0100B275155/images/share-card.png",
-  "creator": "Reuters Graphics"
-}, 
-{
-  "title": "Yemen Papers : a leak reveals use of French-made weapons in Yemen.",
-  "slug": "https://made-in-france.disclose.ngo/en/chapter/yemen-papers/",
-  "categories": ["Investigative"],
-  "image": "https://made-in-france.disclose.ngo/assets/images/share/yemen-papers-facebook-fr.jpg",
-  "imagePath": "https://made-in-france.disclose.ngo/assets/images/share/yemen-papers-facebook-fr.jpg",
-  "creator": "Disclose NGO"
-}]
+[
+  {
+    "title": "Jigsaw : the internet shutdowns issue",
+    "slug": "https://jigsaw.google.com/the-current/shutdown/",
+    "categories": ["Visual"],
+    "featured": true,
+    "image": "https://jigsaw.google.com/static/images/current/04-internet-shutdowns/voices/sims.jpg",
+    "creator": "Google"
+  },
+  {
+    "title": "The Corporations Behind Climate Change.",
+    "slug": "https://parametric.press/issue-02/corporations/",
+    "categories": ["Dataviz"],
+    "image": "https://parametric.press/issue-02/corporations/static/images/share.png",
+    "creator": "Parametric Press"
+  },
+  {
+    "title": "Travel Restrictions: today's international travel restrictions.",
+    "slug": "https://www.travelrestrictionstoday.heshameissa.com/",
+    "categories": ["3D"],
+    "image": "https://hesham-website.s3.amazonaws.com/globe-preview-new.png",
+    "creator": "Hesham Eissa"
+  },
+  {
+    "title": "Drowning in Plastic : visualising the world's addiction to plastic bottles.",
+    "slug": "https://graphics.reuters.com/ENVIRONMENT-PLASTIC/0100B275155/index.html",
+    "categories": ["3D"],
+    "image": "https://graphics.reuters.com/ENVIRONMENT-PLASTIC/0100B275155/images/share-card.png",
+    "creator": "Reuters Graphics"
+  },
+  {
+    "title": "Yemen Papers : a leak reveals use of French-made weapons in Yemen.",
+    "slug": "https://made-in-france.disclose.ngo/en/chapter/yemen-papers/",
+    "categories": ["Investigative"],
+    "image": "https://made-in-france.disclose.ngo/assets/images/share/yemen-papers-facebook-fr.jpg",
+    "creator": "Disclose NGO"
+  }
+]
