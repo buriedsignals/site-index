@@ -54,8 +54,7 @@ const About = () => {
           <p className="typography-paragraph">
             Buried Signals is a platform to spotlight extraordinary visual or
             interactive essays which communicate complex stories or data
-            efficiently, sometimes in combination with open-source investigative
-            techniques.
+            efficiently. Occasionally we&apos;ll feature noteworthy OSINT research.
           </p>
           <p className="typography-paragraph">
             The publication is built atop 
@@ -64,15 +63,14 @@ const About = () => {
             <a href="https://tomvaillant.com" target="_blank" rel="noreferrer">
               Tom Vaillant
             </a>
-            . All of our code is visible on Github, if you&apos;re interested in
-            contributing don&apos;t hesitate to reach out! Any work we&apos;ve
-            published can be challenged on Discord.
+            . All of the code is visible on Github, if you&apos;re interested in
+            contributing don&apos;t hesitate to reach out! Any work we
+            publish can be challenged on our Discord server.
           </p>
           <h1 className="typography-paragraph-header">Manifesto</h1>
           <p className="typography-paragraph">
-            To abstain from false claims of objectivity we try to keep our
-            identities small and apply the tenets of Jim Lehrer’s journalism
-            principles. We&apos;re applying the following principles:
+            To abstain from false claims of objectivity I will try to keep my
+            <a href="http://www.paulgraham.com/identity.html" target="_blank" rel="noreferrer">identity small</a> and apply the following journalism principles on any work we publish ourselves, tenets 2 and 6 whenever possible on essays we curate.
           </p>
           <Spacer multiplier={2} />
           <ol>
