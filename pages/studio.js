@@ -57,7 +57,6 @@ const Studio = () => {
             for interactive storytelling.
           </p>
         </div>
-        <Clients />
         <ContactBox />
       </div>
       <Footer />
