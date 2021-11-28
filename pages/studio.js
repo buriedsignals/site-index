@@ -1,4 +1,4 @@
-import NavigationPages from "../components/navigation-pages";
+import Navbar from "../components/navbar/navbar";
 import ContactBox from "../components/contact-box";
 import Clients from "../components/clients";
 import Footer from "../components/footer";
@@ -8,7 +8,7 @@ import HeaderPages from "../components/header-pages";
 const Studio = () => {
   return (
     <div className="global-wrapper">
-      <NavigationPages />
+      <Navbar theme="dark" />
       <Head>
         <title>Studio | Buried Signals</title>
         <meta title="Studio | Buried Signals" />

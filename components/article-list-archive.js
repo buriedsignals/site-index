@@ -1,7 +1,7 @@
 const React = require("react");
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Navigation from "./navigation";
+import Navbar from "./navbar/navbar";
 import Footer from "./footer";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,7 +22,7 @@ const ArticleListRouter = (props) => {
   if (pathname == "/articles/[category]") {
     return (
       <div className="global-wrapper">
-        <Navigation navLogo={navLogo} />
+        <Navbar />
         <Head>
           <meta name="title" content="Articles | Buried Signals" />
           <meta

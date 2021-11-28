@@ -1,4 +1,4 @@
-import NavigationPages from "../components/navigation-pages";
+import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
 import Clients from "../components/clients";
@@ -39,7 +39,7 @@ const About = () => {
 
   return (
     <div className="global-wrapper">
-      <NavigationPages />
+      <Navbar theme="dark" />
       <Head>
         <title>About | Buried Signals</title>
         <meta title="About | Buried Signals" />
