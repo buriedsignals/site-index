@@ -25,13 +25,9 @@ h2 {
 h1 {
   font-size: 48px;
 }
-p {
-  color: #b9b9b9;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  line-height: 1.5 !important;
-  font-size: 22px !important;
-  margin: 20px 0px 20px 0px !important;
+
+ol {
+  padding-left: 16px;
 }
 
 a {
@@ -70,8 +66,6 @@ li {
 }
 
 .header-wrapper h1 {
-  font-size: 38px;
-  font-weight: 300;
   user-select: none;
 }
 
@@ -126,6 +120,7 @@ li {
   height: 520px;
   display: inline-flex;
   align-items: center;
+  margin-top: -1px;
 }
 
 .pages-header-wrapper {
@@ -136,9 +131,7 @@ li {
 }
 
 .pages-header-wrapper h1 {
-  font-size: 38px;
   color: #1c1e1f;
-  font-weight: 300;
   user-select: none;
 }
 
@@ -207,11 +200,6 @@ li {
 .pages-wrapper h1 {
   margin-top: 2em;
   color: white;
-}
-
-.pages-wrapper p {
-  color: white;
-  font-size: 20px !important;
 }
 
 /* ARTICLES INDEX */
@@ -584,9 +572,6 @@ li {
   h1 {
     font-size: 36px;
   }
-  p {
-    font-size: 18px !important;
-  }
 
   .navbar-wrapper {
     padding: 25px 20px;
@@ -614,18 +599,12 @@ li {
     width: auto;
     margin-top: 0px;
   }
-  .header-wrapper h1 {
-    font-size: 30px;
-  }
   .pages-header-container {
     height: 435px;
   }
   .pages-header-wrapper {
     width: auto;
     margin: 23% 5%;
-  }
-  .pages-header-wrapper h1 {
-    font-size: 28px;
   }
   .featured-article-image {
     height: 50%;
@@ -684,9 +663,6 @@ li {
     max-width: 90% !important;
     margin: 0 auto;
   }
-  .pages-wrapper p {
-    font-size: 18px !important;
-  }
   .pages-wrapper li {
     line-height: 1.5;
     font-size: 16px;
@@ -703,9 +679,6 @@ li {
   h1 {
     font-size: 36px;
   }
-  p {
-    font-size: 18px !important;
-  }
 
   .navbar-wrapper {
     padding: 25px 30px;
@@ -721,10 +694,6 @@ li {
     width: calc(100% - 10em);
     margin-top: 0px;
   }
-  .header-wrapper h1 {
-    font-size: 36px;
-  }
-
   .featured-article-title {
     font-size: 28px;
     height: 55%;
@@ -790,4 +759,111 @@ li {
 
 .svg-inline--fa {
   max-height: 20px;
+}
+
+/*
+MOBILE TYPOGRAPHY
+*/
+.typography-paragraph {
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: white;
+}
+
+.typography-paragraph-header {
+  font-family: Space Grotesk;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.typography-page-header {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.021em;
+}
+
+.typography-main-header {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.021em;
+}
+
+.typography-list {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+/*
+DESKTOP TYPOGRAPHY
+*/
+@media (min-width: 700px) {
+  .typography-paragraph {
+    font-family: Space Grotesk;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: -0.01em;
+  }
+
+  .typography-paragraph-header {
+    font-family: Space Grotesk;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 82px;
+    letter-spacing: -0.01em;
+  }
+
+  .typography-page-header {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  .typography-main-header {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  .typography-list {
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
 }
