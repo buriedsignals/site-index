@@ -18,8 +18,12 @@ function Navbar({ theme = "light" }) {
           </a>
         </Link>
         <div className={styles.navbar_links}>
-          <Link href="/about">ABOUT</Link>
-          <Link href="/studio">STUDIO</Link>
+          <Link className="hover-animation-underline" href="/about">
+            ABOUT
+          </Link>
+          <Link className="hover-animation-underline" href="/studio">
+            STUDIO
+          </Link>
         </div>
       </div>
     </div>
