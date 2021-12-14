@@ -6,7 +6,8 @@ import {
   faTwitter,
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
-
+import { motion } from "framer-motion";
+import { homepage as homepageTransitions } from "./transitions/config";
 class Footer extends React.Component {
   constructor(props) {
     super(props);
@@ -16,10 +17,22 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="header-wrapper">
-        <h1 className="typography-main-header">
+        <motion.h1
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={homepageTransitions.title}
+          className="typography-main-header"
+        >
           A repository of visual experiments in journalism.
-        </h1>
-        <div className="header-socials">
+        </motion.h1>
+        <motion.div
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={homepageTransitions.socials}
+          className="header-socials"
+        >
           <a
             href="https://discord.gg/XA6mqnyk"
             target="_blank"
@@ -52,7 +65,7 @@ class Footer extends React.Component {
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-        </div>
+        </motion.div>
       </div>
     );
   }

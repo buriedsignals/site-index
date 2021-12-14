@@ -6,8 +6,9 @@ import Header from "../components/header";
 import Head from "next/head";
 import articles from "../articles.json";
 import NewsletterBox from "../components/newsletter-box";
+import InitialTransition from "../components/transitions/initial-transition";
 
-const ArticleCategory = () => {
+const ArticleCategory = ({ isFirstMount }) => {
   const router = useRouter();
   const { category } = router.query;
   function handleAnalytics() {
