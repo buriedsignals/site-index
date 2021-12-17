@@ -662,3 +662,30 @@ DESKTOP TYPOGRAPHY
     text-align: left;
   }
 }
+
+#archive-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+#archive-pagination button {
+  background: none;
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-style: normal;
+}
+
+#archive-pagination button.active {
+  color:black;
+  background: #a0ffcc;
+}
+
+#archive-pagination button.disabled {
+  color: #636363;
+}
+
+#archive-pagination button:not(.disabled):hover {
+  color:black;
+  background: #a0ffcc;
+}
