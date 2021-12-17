@@ -15,6 +15,12 @@ const ArticleListRouter = (props) => {
   const router = useRouter();
   const { pathname } = useRouter();
 
+  const ref = useRef();
+
+  function scrollToTop() {
+    ref.current && ref.current.scrollIntoView();
+  }
+
   let navLogo;
   pathname == "/articles/[category]"
     ? (navLogo = "/img/nav-logo.png")
@@ -39,9 +45,9 @@ const ArticleListRouter = (props) => {
           <meta property="og:image" content="/img/meta.png" />
           <title>Articles | Buried Signals</title>
         </Head>
-        <h1 className="typography-page-header">Archive</h1>
+        <h1 className="typography-page-header" ref={ref}>Archive</h1>
         <div className="index-wrapper">
-          <ArticleList {...props} router={router} path={pathname} />
+          <ArticleList {...props} router={router} path={pathname} onPageChange={scrollToTop} />
         </div>
         <Footer footerLogo={footerLogo} />
       </div>
@@ -60,16 +66,14 @@ const ArticleListRouter = (props) => {
           <meta property="og:image" content="/img/meta.png" />
           <title>Articles | Buried Signals</title>
         </Head>
-        <h1 className="typography-page-header">Archive</h1>
-        <ArticleList {...props} router={router} path={pathname} />
+        <h1 className="typography-page-header" ref={ref}>Archive</h1>
+        <ArticleList {...props} router={router} path={pathname} onPageChange={scrollToTop} />
       </div>
     );
   }
 };
 
 function ArticleList (props) {
-
-  const ref = useRef();
 
   const allCategories = useMemo(() => {
     return [
@@ -110,12 +114,11 @@ function ArticleList (props) {
 
   function onPageChange(e) {
     setPage(e - 1);
-    console.log(ref.current)
-    ref?.current.scrollIntoView();
+    props.onPageChange();
   }
 
   return (
-    <div ref={ref}>
+    <div>
       <div className="index-filters">
         <div
           className="filter-category"
