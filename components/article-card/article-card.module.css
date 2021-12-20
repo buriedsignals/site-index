@@ -109,8 +109,15 @@
   height: 540px;
 }
 
+
 .article_card:hover {
   transform: translateY(-5px);
+}
+
+@media (hover: hover) {
+  .article_card:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .article_card:after {

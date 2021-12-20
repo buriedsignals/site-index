@@ -230,12 +230,16 @@ li {
   font-weight: bold;
   margin-bottom: 20px;
   text-decoration: none;
+  transition: background-color 0.2s;
 }
 
-.email-input-box:hover {
-  background-color: #1c1e1f;
-  color: #fff;
+@media (hover: hover) {
+  .email-input-box:hover {
+    background-color: #1c1e1f;
+    color: #fff;
+  }  
 }
+
 
 /* BUTTONS */
 
@@ -277,6 +281,7 @@ li {
   color: #a0ffcc;
 }
 
+
 .button-white:before{
   content: "";
   position: absolute;
@@ -290,10 +295,12 @@ li {
   transition: transform 0.3s;
 }
 
-.button-white:hover::before {
-  background: #a0ffcc;
-  transform-origin: 0% 50%;
-  transform: scale3d(1, 1, 1);
+@media (hover: hover) {
+  .button-white:hover::before {
+    background: #a0ffcc;
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 /* FOOTER */

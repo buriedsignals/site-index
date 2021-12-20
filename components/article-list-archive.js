@@ -1,4 +1,4 @@
-import React, {useMemo, useRef} from 'react';
+import React, {useMemo, useRef, useState} from 'react';
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Navbar from "./navbar/navbar";
@@ -14,11 +14,16 @@ const ArticleListRouter = (props) => {
 
   const router = useRouter();
   const { pathname } = useRouter();
+  const [isInitialPage, setIsInitialPage] = useState(true);
 
   const ref = useRef();
 
   function scrollToTop() {
-    ref.current && ref.current.scrollIntoView();
+    if(isInitialPage) {
+      setIsInitialPage(false)
+      return
+    }
+    ref.current && ref.current.scrollIntoView({behavior: "smooth"});
   }
 
   let navLogo;
