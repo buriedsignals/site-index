@@ -95,7 +95,7 @@ class ArticleList extends React.Component {
         </div>
         <div className="button-container">
           <Link href="/articles">
-            <button className="button-white">See More</button>
+            <button className="button-white button-hover-underline">See More</button>
           </Link>
         </div>
       </div>

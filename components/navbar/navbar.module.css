@@ -29,9 +29,44 @@
   margin-left: 30px;
   font-size: 14px;
   text-decoration: none;
+  position: relative;
+  padding: 15px 0;
 }
-.navbar_links a:hover {
-  text-decoration: none;
+
+.navbar_links a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 13px;
+  width: 100%;
+  height: 1px;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.navbar_links a[data-active="true"]:before {
+  transform: scale3d(1, 1, 1);
+}
+
+.navbar_wrapper[data-theme="light"] .navbar_links a:before {
+  background: white;
+}
+
+
+.navbar_wrapper[data-theme="dark"] .navbar_links a:before {
+  background: #1c1e1f;
+}
+
+@media (hover: hover) {
+  .navbar_links a:hover {
+    text-decoration: none;
+  }
+  
+  .navbar_links a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @media (max-width: 800px) {

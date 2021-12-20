@@ -19,23 +19,6 @@ const bulletPoints = [
 ];
 
 const About = () => {
-  function handleAnalytics() {
-    var _paq = (window._paq = window._paq || []);
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(["trackPageView"]);
-    _paq.push(["enableLinkTracking"]);
-    (function () {
-      var u = "https://buriedsignals.matomo.cloud/";
-      _paq.push(["setTrackerUrl", u + "matomo.php"]);
-      _paq.push(["setSiteId", "1"]);
-      var d = document,
-        g = d.createElement("script"),
-        s = d.getElementsByTagName("script")[0];
-      g.async = true;
-      g.src = "//cdn.matomo.cloud/buriedsignals.matomo.cloud/matomo.js";
-      s.parentNode.insertBefore(g, s);
-    })();
-  }
 
   return (
     <div className="global-wrapper">
@@ -45,7 +28,6 @@ const About = () => {
         <meta title="About | Buried Signals" />
         <meta description="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces." />
         <meta image src="../static/img/meta.png" />
-        {handleAnalytics}
       </Head>
       <HeaderPages title="This publication curates creative experiments in visual storytelling." />
       <div className="pages-wrapper">

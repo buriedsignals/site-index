@@ -179,7 +179,7 @@ li {
 .filter-category a {
   text-decoration: none;
 }
-.filter-category a:hover {
+.filter-category:hover {
   color: white;
 }
 
@@ -230,12 +230,16 @@ li {
   font-weight: bold;
   margin-bottom: 20px;
   text-decoration: none;
+  transition: background-color 0.2s;
 }
 
-.email-input-box:hover {
-  background-color: #1c1e1f;
-  color: #fff;
+@media (hover: hover) {
+  .email-input-box:hover {
+    background-color: #1c1e1f;
+    color: #fff;
+  }  
 }
+
 
 /* BUTTONS */
 
@@ -245,6 +249,7 @@ li {
 }
 
 .button-black {
+  position: relative;
   font-size: 24px;
   font-weight: bold;
   background-color: inherit;
@@ -261,14 +266,12 @@ li {
   cursor: pointer;
 }
 .button-white {
+  position: relative;
   font-size: 24px;
   cursor: pointer;
   font-weight: bold;
   border: none;
   color: white;
-  border-radius: none;
-  border-bottom: 4px solid white;
-  border-radius: 0px !important;
   height: 50px;
   padding: 0px !important;
   margin: 65px auto !important;
@@ -276,7 +279,28 @@ li {
 }
 .button-white:hover {
   color: #a0ffcc;
-  border-color: #a0ffcc;
+}
+
+
+.button-white:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+@media (hover: hover) {
+  .button-white:hover::before {
+    background: #a0ffcc;
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 /* FOOTER */
@@ -661,4 +685,31 @@ DESKTOP TYPOGRAPHY
     letter-spacing: -0.01em;
     text-align: left;
   }
+}
+
+#archive-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+#archive-pagination button {
+  background: none;
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-style: normal;
+}
+
+#archive-pagination button.active {
+  color:black;
+  background: #a0ffcc;
+}
+
+#archive-pagination button.disabled {
+  color: #636363;
+}
+
+#archive-pagination button:not(.disabled):hover {
+  color:black;
+  background: #a0ffcc;
 }
