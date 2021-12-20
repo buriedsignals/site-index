@@ -20,6 +20,7 @@ function ArticleCard({ article = {}, featured = false }) {
       <div 
         className={styles.article_card} 
         data-featured={featured} 
+        data-hovered={isHovered}
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
       >
@@ -30,12 +31,14 @@ function ArticleCard({ article = {}, featured = false }) {
           {article.deployURL ? (
             ""
           ) : (
-            <div className={styles.article_redirect_icon} data-hovered={isHovered}>
+            <div className={styles.article_redirect_icon}>
               <FontAwesomeIcon icon={faExternalLinkAlt} />
             </div>
           )}
         </div>
-        <img className={styles.article_image} src={article.image}></img>
+        <div className={styles.article_image_container}>
+          <img className={styles.article_image} src={article.image}></img>
+        </div>
         <div className={styles.article_details}>
           <div className={styles.article_category}>{category}</div>
           <div className={styles.article_title}>{article.title}</div>
