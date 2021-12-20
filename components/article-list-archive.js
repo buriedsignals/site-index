@@ -26,16 +26,6 @@ const ArticleListRouter = (props) => {
     ref.current && ref.current.scrollIntoView({behavior: "smooth"});
   }
 
-  let navLogo;
-  pathname == "/articles/[category]"
-    ? (navLogo = "/img/nav-logo.png")
-    : (navLogo = "/img/nav-logo.png");
-  let footerLogo;
-  pathname == "/articles/[category]"
-    ? (footerLogo = "/img/bs_footer.png")
-    : (footerLogo = "/img/bs_footer.png");
-
-
   if (pathname == "/articles/[category]") {
     return (
       <div className="global-wrapper">
@@ -54,7 +44,7 @@ const ArticleListRouter = (props) => {
         <div className="index-wrapper">
           <ArticleList {...props} router={router} path={pathname} onPageChange={scrollToTop} />
         </div>
-        <Footer footerLogo={footerLogo} />
+        <Footer footerLogo="/img/bs_footer.png" />
       </div>
     );
   } else {
