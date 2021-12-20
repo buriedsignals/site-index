@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import styles from "./article-card.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -5,6 +6,8 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 function ArticleCard({ article = {}, featured = false }) {
   const creator = article?.creator?.toUpperCase();
   const category = article?.categories[0]?.toUpperCase();
+
+  const [isHovered, setHover] = useState(false);
   // IF ROUTE IS CATEGORY -> prefix article.image with "../"
   // uppercase categories, lowercase in json
   return (
@@ -14,7 +17,12 @@ function ArticleCard({ article = {}, featured = false }) {
       target="_blank"
       rel="noreferrer"
     >
-      <div className={styles.article_card} data-featured={featured}>
+      <div 
+        className={styles.article_card} 
+        data-featured={featured} 
+        onMouseOver={() => setHover(true)}
+        onMouseOut={() => setHover(false)}
+      >
         {featured && (
           <div className={styles.article_featured_tag}>FEATURED</div>
         )}
@@ -22,7 +30,9 @@ function ArticleCard({ article = {}, featured = false }) {
           {article.deployURL ? (
             ""
           ) : (
-            <FontAwesomeIcon icon={faExternalLinkAlt} />
+            <div className={styles.article_redirect_icon} data-hovered={isHovered}>
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </div>
           )}
         </div>
         <img className={styles.article_image} src={article.image}></img>
