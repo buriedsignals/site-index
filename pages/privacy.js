@@ -9,7 +9,7 @@ const Privacy = () => {
       <Head>
         <meta />
       </Head>
-      <div className="pages-wrapper">
+      <div className="pages-wrapper privacy">
         <h1>Privacy Policy</h1>
         <p>We believe in openness, privacy and 100% data ownership. We use Matomo to anonymize and aggregate data collected through cookies.</p>
         <p>This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us. This Privacy Policy applies to the information that we obtain through your use of buriedsignals.com
@@ -23,7 +23,7 @@ const Privacy = () => {
         <p>
         Cookies — we use anonymized cookies (small data files transferred onto computers or devices by sites) for record-keeping purposes and to enhance functionality on our site. You may deactivate or restrict the transmission of cookies by changing the settings of your web browser. Cookies that are already stored may be deleted at any time.
         </p>
-        <h3>our Rights</h3>
+        <h3>Your Rights</h3>
         <p>
         You have the right to be informed of Personal Data processed by Matomo, a right to rectification/correction, erasure and restriction of processing. You also have the right to ask from us a structured, common and machine-readable format of Personal Data you provided to us. We can only identify you via your email address and we can only adhere to your request and provide information if we have Personal Data about you through you having made contact with us directly and/or you using our site and/or service. We cannot provide, rectify or delete any data that we store on behalf of our users or customers. To exercise any of the rights mentioned in this Privacy Policy and/or in the event of questions or comments relating to the use of Personal Data you may contact Matomos support team: privacy@matomo.org In addition, you have the right to lodge a complaint with the data protection authority in your jurisdiction.
         </p>

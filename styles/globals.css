@@ -143,7 +143,6 @@ li {
   padding: 0 1em;
   max-width: 880px;
   margin: 0 auto !important;
-  text-align: center;
 }
 
 .pages-wrapper h1 {
@@ -421,13 +420,13 @@ li {
   height: 40px;
 }
 
-.pages-wrapper p
+.privacy p
 {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
 }
 
-.pages-wrapper h3
+.privacy h3
 {
   font-size: 22px;
   color: white;
@@ -521,6 +520,10 @@ li {
   }
   .clients-row img {
     height: 25px;
+  }
+  .privacy p
+  {
+    font-size: 18px;
   }
 }
 
