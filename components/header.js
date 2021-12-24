@@ -21,7 +21,7 @@ class Footer extends React.Component {
         </h1>
         <div className="header-socials">
           <a
-            href="https://discord.gg/XA6mqnyk"
+            href="https://discord.gg/JSZuVpbPDJ"
             target="_blank"
             rel="noreferrer"
             className="header-social"

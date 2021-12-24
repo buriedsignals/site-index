@@ -16,7 +16,7 @@ class Footer extends React.Component {
       return (
         <div className="footer-wrapper">
           <div className="footer-socials">
-            <a href="https://discord.gg/XA6mqnyk" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faDiscord} /></a>
+            <a href="https://discord.gg/JSZuVpbPDJ" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faDiscord} /></a>
             <a href="https://twitter.com/buriedsignals" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faTwitter} /></a>
             <a href="https://instagram.com/buriedsignals" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="mailto:tom@buriedsignals.com" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faEnvelope} /></a>

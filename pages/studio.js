@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar/navbar";
-import ContactBox from "../components/contact-box";
-import Clients from "../components/clients";
+import Link from "next/link";
+// import ContactBox from "../components/contact-box";
+// import Clients from "../components/clients";
 import Footer from "../components/footer";
 import Head from "next/head";
 import HeaderPages from "../components/header-pages";
@@ -57,6 +58,9 @@ const Studio = () => {
             for interactive storytelling.
           </p>
         </div>
+        <Link href="https://t1ipnnn9dzv.typeform.com/to/vUqvFitw" target="_blank" rel="noreferrer">
+            <button className="button-white button-hover-underline">Contact Us</button>
+        </Link>
       </div>
       <Footer />
     </div>
