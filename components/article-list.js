@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import ArticleCard from "./article-card/article-card";
 
@@ -33,16 +33,18 @@ class ArticleList extends React.Component {
     const { hasError, idyll, updateProps, clickCount, ...props } = this.props;
 
     const allArticles = props.articles;
+    const lastArticles = allArticles.slice(0, 7)
+
     const allCategories = [
-      ...new Set(allArticles.flatMap((article) => article.categories)),
+      ...new Set(lastArticles.flatMap((article) => article.categories)),
     ];
 
     allCategories.sort((a, b) => {
       return a.localeCompare(b);
     });
 
-    const featuredArticles = allArticles.filter((article) => article.featured);
-    const unfeaturedArticles = allArticles.filter(
+    const featuredArticles = lastArticles.filter((article) => article.featured);
+    const unfeaturedArticles = lastArticles.filter(
       (article) => !article.featured
     );
 

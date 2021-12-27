@@ -5,8 +5,11 @@ import Link from "next/link";
 import Footer from "../components/footer";
 import Head from "next/head";
 import HeaderPages from "../components/header-pages";
+import projects from "../projects.json"
+import ArticleCard from "../components/article-card/article-card";
 
 const Studio = () => {
+
   return (
     <div className="global-wrapper">
       <Navbar theme="dark" />
@@ -17,6 +20,10 @@ const Studio = () => {
         <meta image src="../static/img/meta.png" />
       </Head>
       <HeaderPages title="We craft visual essays, interactive video and web documentaries." />
+      <div className="projects-index">
+          <ArticleCard article={projects[0]}></ArticleCard>
+          <ArticleCard article={projects[1]}></ArticleCard>
+      </div>
       <div className="pages-wrapper">
         <div className="pages-text-container">
           <h1 className="typography-paragraph-header">The Studio</h1>
@@ -58,9 +65,11 @@ const Studio = () => {
             for interactive storytelling.
           </p>
         </div>
-        <Link href="https://t1ipnnn9dzv.typeform.com/to/vUqvFitw" target="_blank" rel="noreferrer">
+        <div className="button-container">
+          <Link href="https://t1ipnnn9dzv.typeform.com/to/vUqvFitw" target="_blank" rel="noreferrer">
             <button className="button-white button-hover-underline">Contact Us</button>
-        </Link>
+          </Link>
+        </div>
       </div>
       <Footer />
     </div>

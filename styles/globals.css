@@ -161,6 +161,17 @@ li {
   grid-row-gap: 25px;
   margin-bottom: 5%;
 }
+.projects-index {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-column-gap: 5%;
+  grid-row-gap: 25px;
+  margin-bottom: 5%;
+  margin-top: -50px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* FILTERS */
 .index-filters {
