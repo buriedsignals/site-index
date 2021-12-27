@@ -16,10 +16,10 @@ const Studio = () => {
       <Head>
         <title>Studio | Buried Signals</title>
         <meta title="Studio | Buried Signals" />
-        <meta description="Creative studio specialised in visual essays and web documentaries." />
+        <meta description="Creative studio specialised in visual essays, web documentaries and immersive journalism." />
         <meta image src="../static/img/meta.png" />
       </Head>
-      <HeaderPages title="We craft visual essays, interactive video and web documentaries." />
+      <HeaderPages title="We craft visual essays, interactive articles and immersive documentaries." />
       <div className="projects-index">
           <ArticleCard article={projects[0]}></ArticleCard>
           <ArticleCard article={projects[1]}></ArticleCard>
@@ -34,7 +34,7 @@ const Studio = () => {
               target="_blank"
               rel="noreferrer"
             >
-              visual essays
+              explorable explanations
             </a>
             ,{" "}
             <a
@@ -42,16 +42,16 @@ const Studio = () => {
               target="_blank"
               rel="noreferrer"
             >
-              web documentaries
+              interactive documentaries
             </a>{" "}
-            and choice-driven narratives by combining the audio, visual, and
-            interactive capabilities of dynamic media.
+            and immersive journalism. We combine the audio, visual, and
+            interactive capabilities of dynamic media to create powerful choice-driven narratives.
           </p>
           <p className="typography-paragraph">
             The studio relies on a constellation of senior artists and
             production partners from around the world to deliver outstanding
             results. Using capabilities in 3D, data visualisation, video,
-            interaction design and code we&apos;ve produced work in multiple
+            interaction design, mixed-reality and code we&apos;ve produced work in multiple
             mediums for commercial or institutional clients.
           </p>
           <p className="typography-paragraph">
