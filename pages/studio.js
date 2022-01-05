@@ -66,7 +66,7 @@ const Studio = () => {
           </p>
         </div>
         <div className="button-container">
-          <Link href="https://t1ipnnn9dzv.typeform.com/to/vUqvFitw" target="_blank" rel="noreferrer">
+          <Link href="https://t1ipnnn9dzv.typeform.com/to/vUqvFitw" passHref rel="noreferrer">
             <button className="button-white button-hover-underline">Contact Us</button>
           </Link>
         </div>

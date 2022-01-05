@@ -63,6 +63,10 @@ const About = () => {
               </div>
             ))}
           </ol>
+          <div className="button-container">
+            <img src="https://www.protruthpledge.org/hotlink-ok/ptpBacked.gif"></img>
+            <p className="typography-pledge">We signed the <a href="http://ProTruthPledge.org">Pro-Truth Pledge</a> please hold us accountable.</p>
+          </div>
         </div>
       </div>
       <NewsletterBox />
