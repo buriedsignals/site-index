@@ -17,7 +17,7 @@ class Footer extends React.Component {
     return (
       <div className="header-wrapper">
         <h1 className="typography-main-header">
-          A repository of visual experiments in journalism.
+        A repository of visual and immersive journalism.
         </h1>
         <div className="header-socials">
           <a

@@ -18,7 +18,7 @@ const ArticleCategory = () => {
         <meta name="title" content="Buried Signals" />
         <meta
           name="description"
-          content="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces."
+          content="Curating visual, immersive and open-source investigative journalism."
         />
         <meta image src="../static/img/meta.png" />
         <meta property="og:image" content="../static/img/meta.png" />

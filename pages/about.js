@@ -26,17 +26,16 @@ const About = () => {
       <Head>
         <title>About | Buried Signals</title>
         <meta title="About | Buried Signals" />
-        <meta description="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces." />
+        <meta description="Curating visual, immersive and open-source investigative journalism." />
         <meta image src="../static/img/meta.png" />
       </Head>
-      <HeaderPages title="This publication curates creative experiments in visual storytelling." />
+      <HeaderPages title="This publication curates creative experiments in journalism." />
       <div className="pages-wrapper">
         <div className="pages-text-container">
           <h1 className="typography-paragraph-header">The Publication</h1>
           <p className="typography-paragraph">
-            Buried Signals is a platform to spotlight extraordinary visual or
-            interactive essays which communicate complex stories or data
-            efficiently. Occasionally we&apos;ll feature noteworthy OSINT research.
+            Buried Signals is a platform to spotlight extraordinary visual essays which communicate complex stories or data
+            efficiently. Occasionally we&apos;ll feature noteworthy OSINT research and immersive documentaries.
           </p>
           <p className="typography-paragraph">
             The publication is built atop 
@@ -64,8 +63,9 @@ const About = () => {
             ))}
           </ol>
           <div className="button-container">
-            <img src="https://www.protruthpledge.org/hotlink-ok/ptpBacked.gif"></img>
+            <img src="https://www.protruthpledge.org/hotlink-ok/ptpBacked.gif" className="logo-sizer"></img>
             <p className="typography-pledge">We signed the <a href="http://ProTruthPledge.org">Pro-Truth Pledge</a> please hold us accountable.</p>
+            <img src="../static/img/1percent.png" className="logo-sizer"></img>
           </div>
         </div>
       </div>

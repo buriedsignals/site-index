@@ -684,6 +684,12 @@ MOBILE TYPOGRAPHY
   color: white;
 }
 
+.logo-sizer 
+{
+  height: 180px;
+  margin-top: 30px;
+}
+
 /*
 DESKTOP TYPOGRAPHY
 */

@@ -16,10 +16,10 @@ const Studio = () => {
       <Head>
         <title>Studio | Buried Signals</title>
         <meta title="Studio | Buried Signals" />
-        <meta description="Creative studio specialised in visual essays, web documentaries and immersive journalism." />
+        <meta description="A creative production studio, crafting explorable essays and immersive documentaries." />
         <meta image src="../static/img/meta.png" />
       </Head>
-      <HeaderPages title="We craft visual essays, interactive articles and immersive documentaries." />
+      <HeaderPages title="A creative production studio, crafting explorable essays and immersive documentaries." />
       <div className="projects-index">
           <ArticleCard article={projects[0]}></ArticleCard>
           <ArticleCard article={projects[1]}></ArticleCard>
@@ -64,6 +64,7 @@ const Studio = () => {
             challenging ourselves to find the most optimal mediums and methods
             for interactive storytelling.
           </p>
+          <p className="typography-paragraph">Our productions are carbon offset with <a href="https://wren.co">Wren</a></p>
         </div>
         <div className="button-container">
           <Link href="https://t1ipnnn9dzv.typeform.com/to/vUqvFitw" passHref rel="noreferrer">
