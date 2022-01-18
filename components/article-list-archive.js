@@ -9,6 +9,7 @@ import { GeistProvider } from "@geist-ui/react";
 import { Pagination } from "@geist-ui/react";
 import { usePagination } from "react-use-pagination";
 import Spacer from "../components/spacer/spacer";
+import NewsletterBox from "../components/newsletter-box";
 
 const ArticleListRouter = (props) => {
 
@@ -34,7 +35,7 @@ const ArticleListRouter = (props) => {
           <meta name="title" content="Articles | Buried Signals" />
           <meta
             name="description"
-            content="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces."
+            content="Curating visual, immersive and open-source investigative journalism."
           />
           <meta image src="/img/meta.png" />
           <meta property="og:image" content="/img/meta.png" />
@@ -158,7 +159,7 @@ function ArticleList (props) {
             <Spacer multiplier={1} />
         </>
       )}
-      
+      <NewsletterBox />
     </div>
   );
 }

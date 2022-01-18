@@ -26,7 +26,7 @@ const Studio = () => {
       </div>
       <div className="pages-wrapper">
         <div className="pages-text-container">
-          <h1 className="typography-paragraph-header">The Studio</h1>
+          <h2 className="typography-paragraph-header">The Studio</h2>
           <p className="typography-paragraph">
             We craft{" "}
             <a

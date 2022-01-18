@@ -96,7 +96,7 @@ class ArticleList extends React.Component {
           </div>
         </div>
         <div className="button-container">
-          <Link href="/articles">
+          <Link href="/articles" passHref>
             <button className="button-white button-hover-underline">See More</button>
           </Link>
         </div>

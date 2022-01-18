@@ -1,9 +1,8 @@
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
-import Clients from "../components/clients";
 import HeaderPages from "../components/header-pages";
-import articles from "../articles.json";
+// import articles from "../articles.json";
 import NewsletterBox from "../components/newsletter-box";
 import Spacer from "../components/spacer/spacer";
 
@@ -32,7 +31,7 @@ const About = () => {
       <HeaderPages title="This publication curates creative experiments in journalism." />
       <div className="pages-wrapper">
         <div className="pages-text-container">
-          <h1 className="typography-paragraph-header">The Publication</h1>
+          <h2 className="typography-paragraph-header">The Publication</h2>
           <p className="typography-paragraph">
             Buried Signals is a platform to spotlight extraordinary visual essays which communicate complex stories or data
             efficiently. Occasionally we&apos;ll feature noteworthy OSINT research and immersive documentaries.
