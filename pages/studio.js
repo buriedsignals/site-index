@@ -34,7 +34,7 @@ const Studio = () => {
               target="_blank"
               rel="noreferrer"
             >
-              explorable explanations
+              visual essays
             </a>
             ,{" "}
             <a
@@ -42,17 +42,16 @@ const Studio = () => {
               target="_blank"
               rel="noreferrer"
             >
-              interactive documentaries
+              web documentaries
             </a>{" "}
-            and immersive journalism. We combine the audio, visual, and
-            interactive capabilities of dynamic media to create powerful choice-driven narratives.
+            and immersive journalism. 
+            We combine the audio, visual, and interactive capabilities of dynamic media to visualise existing insights or create unique choice-driven narratives.
           </p>
           <p className="typography-paragraph">
             The studio relies on a constellation of senior artists and
             production partners from around the world to deliver outstanding
-            results. Using capabilities in 3D, data visualisation, video,
-            interaction design, mixed-reality and code we&apos;ve produced work in multiple
-            mediums for commercial or institutional clients.
+            results. Using capabilities in data visualisation, 3D, video,
+            interaction design, mixed-reality user experience design and programming we&apos;ve produced enhanced editorial and video for commercial or institutional clients.
           </p>
           <p className="typography-paragraph">
             We work alongside the Human Data Interface Group to continuously
