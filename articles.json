@@ -1,9 +1,23 @@
 [ 
   {
+    "title": "Global Positioning System",
+    "slug": "https://ciechanow.ski/gps/",
+    "categories": ["Interactive"],
+    "image": "./static/img/gps.png",
+    "creator": "Bartosz Ciechanowski"
+  },
+  {
+    "title": "Beef industry fueling Amazon rainforest destruction",
+    "slug": "https://www.bloomberg.com/graphics/2022-beef-industry-fueling-amazon-rainforest-destruction-deforestation/",
+    "categories": ["Investigative"],
+    "featured": true,
+    "image": "https://www.bloomberg.com/graphics/2022-beef-industry-fueling-amazon-rainforest-destruction-deforestation/img/2022-amazon-cattle_facebook3.png",
+    "creator": "Bloomberg Graphics"
+  },
+  {
     "title": "A Promise Broken : social mobility in the digital age",
     "slug": "https://atelier.net/social-mobility/a-promise-broken/",
     "categories": ["Visual"],
-    "featured": true,
     "image": "https://atelier.net/social-mobility/static/share-image-act-1-feab17dbe9144b42dc1c634ad5cb94fb.jpg",
     "creator": "L'atelier"
   },
