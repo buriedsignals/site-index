@@ -3,7 +3,7 @@
     "title": "Global Positioning System",
     "slug": "https://ciechanow.ski/gps/",
     "categories": ["Interactive"],
-    "image": "./static/img/gps.png",
+    "image": "https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/gps.png",
     "creator": "Bartosz Ciechanowski"
   },
   {
