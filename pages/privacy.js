@@ -7,7 +7,10 @@ const Privacy = () => {
     <div className="global-wrapper">
       <Navbar />
       <Head>
-        <meta />
+        <title>Privacy Policy | Buried Signals</title>
+        <meta title="Privacy Policy | Buried Signals" />
+        <meta description="urating visual, immersive and open-source investigative journalism." />
+        <meta image src="../static/img/meta.png" />
       </Head>
       <div className="pages-wrapper privacy">
         <h1>Privacy Policy</h1>
