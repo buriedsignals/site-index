@@ -1,11 +1,17 @@
 [ 
   {
+    "title": "Death and Valor on an American Warship Doomed by its Own Navy",
+    "slug": "https://features.propublica.org/navy-accidents/uss-fitzgerald-destroyer-crash-crystal/",
+    "categories": ["Visual"],
+    "featured": true,
+    "image": "https://assets.propublica.org/images/externals/20190206-uss-fitzgerald-1200x630.jpg",
+    "creator": "ProPublica"
+  },{
     "title": "China's hidden camps - the vanished Uighurs of Xinjiang",
     "slug": "https://www.bbc.co.uk/news/resources/idt-sh/China_hidden_camps",
     "categories": ["Visual"],
-    "featured": true,
     "image": "https://news.files.bbci.co.uk/include/shorthand/42264/media/gulagtitle3-mr.jpg",
-    "creator": "BBC News"
+    "creator": "BBC News Graphics"
   },{
     "title": "Global Positioning System",
     "slug": "https://ciechanow.ski/gps/",
