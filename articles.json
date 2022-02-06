@@ -1,9 +1,15 @@
 [ 
   {
+    "title": "China's hidden camps - the vanished Uighurs of Xinjiang",
+    "slug": "https://www.bbc.co.uk/news/resources/idt-sh/China_hidden_camps",
+    "categories": ["Visual"],
+    "featured": true,
+    "image": "https://news.files.bbci.co.uk/include/shorthand/42264/media/gulagtitle3-mr.jpg",
+    "creator": "BBC News"
+  },{
     "title": "Global Positioning System",
     "slug": "https://ciechanow.ski/gps/",
     "categories": ["Interactive"],
-    "featured": true,
     "image": "https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/gps.png",
     "creator": "Bartosz Ciechanowski"
   },
