@@ -3,6 +3,7 @@
     "title": "Global Positioning System",
     "slug": "https://ciechanow.ski/gps/",
     "categories": ["Interactive"],
+    "featured": true,
     "image": "https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/gps.png",
     "creator": "Bartosz Ciechanowski"
   },
@@ -10,7 +11,6 @@
     "title": "Beef industry fueling Amazon rainforest destruction",
     "slug": "https://www.bloomberg.com/graphics/2022-beef-industry-fueling-amazon-rainforest-destruction-deforestation/",
     "categories": ["Investigative"],
-    "featured": true,
     "image": "https://www.bloomberg.com/graphics/2022-beef-industry-fueling-amazon-rainforest-destruction-deforestation/img/2022-amazon-cattle_facebook3.png",
     "creator": "Bloomberg Graphics"
   },
