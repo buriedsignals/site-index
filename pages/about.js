@@ -24,9 +24,23 @@ const About = () => {
       <Navbar theme="dark" />
       <Head>
         <title>About | Buried Signals</title>
-        <meta title="About | Buried Signals" />
-        <meta description="Curating visual, immersive and open-source investigative journalism." />
-        <meta image src="../static/img/meta.png" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Curating visual and immersive journalism."/>
+        <meta name="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta itemProp="name" content="About | Buried Signals" />
+        <meta itemProp="description" content="Curating visual and immersive journalism." />
+        <meta itemProp="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About | Buried Signals" />
+        <meta name="twitter:description" content="Curating visual and immersive journalism." />
+        <meta name="twitter:site" content="@buriedsignals" />
+        <meta name="twitter:image:src" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="og:title" content="About | Buried Signals" />
+        <meta name="og:description" content="Curating visual and immersive journalism." />
+        <meta name="og:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="og:url" content="https://buriedsignals.com" />
+        <meta name="og:site_name" content="Buried Signals" />
+        <meta name="og:type" content="website" />
       </Head>
       <HeaderPages title="This publication curates creative experiments in journalism." />
       <div className="pages-wrapper">
@@ -47,7 +61,7 @@ const About = () => {
             contributing don&apos;t hesitate to reach out! Any work we
             publish can be challenged on our Discord server.
           </p>
-          <h1 className="typography-paragraph-header">Manifesto</h1>
+          <h2 className="typography-paragraph-header">Manifesto</h2>
           <p className="typography-paragraph">
             To abstain from false claims of objectivity I will try to keep my&nbsp;   
             <a href="http://www.paulgraham.com/identity.html" target="_blank" rel="noreferrer">identity small</a> and apply the following journalism principles on any work we publish ourselves. Tenets 2 and 6 will need to be excluded from essays we curate.

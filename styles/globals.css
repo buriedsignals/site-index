@@ -279,7 +279,10 @@ li {
 }
 .button-white {
   position: relative;
+  text-decoration: none;
+  display: inline-block;
   font-size: 24px;
+  font-family: Arial;
   cursor: pointer;
   font-weight: bold;
   border: none;
@@ -289,6 +292,7 @@ li {
   margin: 65px auto !important;
   background-color: inherit;
 }
+
 .button-white:hover {
   color: #a0ffcc;
 }

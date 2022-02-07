@@ -31,16 +31,6 @@ const ArticleListRouter = (props) => {
     return (
       <div className="global-wrapper">
         <Navbar />
-        <Head>
-          <meta name="title" content="Articles | Buried Signals" />
-          <meta
-            name="description"
-            content="Curating visual, immersive and open-source investigative journalism."
-          />
-          <meta image src="/img/meta.png" />
-          <meta property="og:image" content="/img/meta.png" />
-          <title>Articles | Buried Signals</title>
-        </Head>
         <h1 className="typography-page-header" ref={ref}>Archive</h1>
         <div className="index-wrapper">
           <ArticleList {...props} router={router} path={pathname} onPageChange={scrollToTop} />
@@ -52,16 +42,6 @@ const ArticleListRouter = (props) => {
 
     return (
       <div>
-        <Head>
-          <meta name="title" content="Articles | Buried Signals" />
-          <meta
-            name="description"
-            content="Experiments in visual journalism. Curating and crafting explorable explanations, web documentaries and interfaces."
-          />
-          <meta image src="/img/meta.png" />
-          <meta property="og:image" content="/img/meta.png" />
-          <title>Articles | Buried Signals</title>
-        </Head>
         <h1 className="typography-page-header" ref={ref}>Archive</h1>
         <ArticleList {...props} router={router} path={pathname} onPageChange={scrollToTop} />
       </div>
@@ -98,7 +78,7 @@ function ArticleList (props) {
     endIndex
   } = usePagination({
     totalItems: selectedCategoryArticles.length,
-    initialPageSize: 4,
+    initialPageSize: 8,
     initialPage: 0
   });
 
@@ -115,6 +95,26 @@ function ArticleList (props) {
 
   return (
     <div>
+      <Head>
+        <title>Articles | Buried Signals</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Curating visual and immersive journalism."/>
+        <meta name="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta itemProp="name" content="Articles | Buried Signals" />
+        <meta itemProp="description" content="Curating visual and immersive journalism." />
+        <meta itemProp="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Articles | Buried Signals" />
+        <meta name="twitter:description" content="Curating visual and immersive journalism." />
+        <meta name="twitter:site" content="@buriedsignals" />
+        <meta name="twitter:image:src" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="og:title" content="Articles | Buried Signals" />
+        <meta name="og:description" content="Curating visual and immersive journalism." />
+        <meta name="og:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="og:url" content="https://buriedsignals.com" />
+        <meta name="og:site_name" content="Buried Signals" />
+        <meta name="og:type" content="website" />
+    </Head>
       <div className="index-filters">
         <div
           className="filter-category"

@@ -15,9 +15,23 @@ const Studio = () => {
       <Navbar theme="dark" />
       <Head>
         <title>Studio | Buried Signals</title>
-        <meta title="Studio | Buried Signals" />
-        <meta description="A creative production studio, crafting explorable essays and immersive documentaries." />
-        <meta image src="../static/img/meta.png" />
+        <meta charset="utf-8" />
+        <meta name="description" content="A creative production studio, crafting explorable essays and immersive documentaries."/>
+        <meta name="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta itemProp="name" content="Articles | Buried Signals" />
+        <meta itemProp="description" content="A creative production studio, crafting explorable essays and immersive documentaries" />
+        <meta itemProp="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Articles | Buried Signals" />
+        <meta name="twitter:description" content="A creative production studio, crafting explorable essays and immersive documentaries" />
+        <meta name="twitter:site" content="@buriedsignals" />
+        <meta name="twitter:image:src" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="og:title" content="Articles | Buried Signals" />
+        <meta name="og:description" content="A creative production studio, crafting explorable essays and immersive documentaries" />
+        <meta name="og:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta name="og:url" content="https://buriedsignals.com" />
+        <meta name="og:site_name" content="Buried Signals" />
+        <meta name="og:type" content="website" />
       </Head>
       <HeaderPages title="A creative production studio, crafting explorable essays and immersive documentaries." />
       <div className="projects-index">
