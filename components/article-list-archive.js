@@ -31,7 +31,6 @@ const ArticleListRouter = (props) => {
     return (
       <div className="global-wrapper">
         <Navbar />
-        <h1 className="typography-page-header" ref={ref}>Archive</h1>
         <div className="index-wrapper">
           <ArticleList {...props} router={router} path={pathname} onPageChange={scrollToTop} />
         </div>
@@ -42,7 +41,6 @@ const ArticleListRouter = (props) => {
 
     return (
       <div>
-        <h1 className="typography-page-header" ref={ref}>Archive</h1>
         <ArticleList {...props} router={router} path={pathname} onPageChange={scrollToTop} />
       </div>
     );
@@ -115,6 +113,7 @@ function ArticleList (props) {
         <meta name="og:site_name" content="Buried Signals" />
         <meta name="og:type" content="website" />
     </Head>
+      <h1 className="typography-page-header">Archive</h1>
       <div className="index-filters">
         <div
           className="filter-category"
