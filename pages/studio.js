@@ -16,24 +16,24 @@ const Studio = () => {
       <Head>
         <title>Studio | Buried Signals</title>
         <meta charset="utf-8" />
-        <meta name="description" content="A creative production studio, crafting explorable essays and immersive documentaries."/>
+        <meta name="description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries."/>
         <meta name="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
-        <meta itemProp="name" content="Articles | Buried Signals" />
-        <meta itemProp="description" content="A creative production studio, crafting explorable essays and immersive documentaries" />
+        <meta itemProp="name" content="Studio | Buried Signals" />
+        <meta itemProp="description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries" />
         <meta itemProp="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Articles | Buried Signals" />
-        <meta name="twitter:description" content="A creative production studio, crafting explorable essays and immersive documentaries" />
+        <meta name="twitter:title" content="Studio | Buried Signals" />
+        <meta name="twitter:description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries" />
         <meta name="twitter:site" content="@buriedsignals" />
         <meta name="twitter:image:src" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
-        <meta name="og:title" content="Articles | Buried Signals" />
-        <meta name="og:description" content="A creative production studio, crafting explorable essays and immersive documentaries" />
+        <meta name="og:title" content="Studio | Buried Signals" />
+        <meta name="og:description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries" />
         <meta name="og:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
         <meta name="og:url" content="https://buriedsignals.com" />
         <meta name="og:site_name" content="Buried Signals" />
         <meta name="og:type" content="website" />
       </Head>
-      <HeaderPages title="A creative production studio, crafting explorable essays and immersive documentaries." />
+      <HeaderPages title="A creative production studio crafting explorable essays, visual reports and immersive documentaries." />
       <div className="projects-index">
           <ArticleCard article={projects[0]}></ArticleCard>
           <ArticleCard article={projects[1]}></ArticleCard>
@@ -50,32 +50,19 @@ const Studio = () => {
             >
               visual essays
             </a>
-            ,{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Web_documentary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              web documentaries
-            </a>{" "}
-            and immersive journalism. 
+            , immersive experiences or web documentaries.
+            {" "}
             We combine the audio, visual, and interactive capabilities of dynamic media to visualise existing insights or create unique choice-driven narratives.
           </p>
           <p className="typography-paragraph">
             The studio relies on a constellation of senior artists and
-            production partners from around the world to deliver outstanding
-            results. Using capabilities in data visualisation, 3D, video,
-            interaction design, mixed-reality user experience design and programming we&apos;ve produced enhanced editorial and video for commercial or institutional clients.
+            production partners from around the world. Using expertise in data visualisation, 3D, video,
+            design and development we&apos;ve produced enhanced editorial for commercial or institutional clients.
           </p>
           <p className="typography-paragraph">
             We work alongside the Human Data Interface Group to continuously
             improve our experiences, integrating the latest technological
             developments and user interaction research in our conceptualisation.
-            Interactive articles and moving images are proven to amplify
-            learning for readers by boosting engagement, time spent and virality
-            when compared to static alternatives - we aim to continue
-            challenging ourselves to find the most optimal mediums and methods
-            for interactive storytelling.
           </p>
           <p className="typography-paragraph">Our productions are carbon offset with <a href="https://wren.co">Wren</a></p>
         </div>
