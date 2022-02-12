@@ -33,7 +33,7 @@ const Studio = () => {
         <meta name="og:site_name" content="Buried Signals" />
         <meta name="og:type" content="website" />
       </Head>
-      <HeaderPages title="A creative production studio crafting explorable essays, visual reports and immersive documentaries." />
+      <HeaderPages title="A creative production studio crafting visual, interactive and immersive stories." />
       <div className="projects-index">
           <ArticleCard article={projects[0]}></ArticleCard>
           <ArticleCard article={projects[1]}></ArticleCard>
@@ -42,16 +42,6 @@ const Studio = () => {
         <div className="pages-text-container">
           <h2 className="typography-paragraph-header">The Studio</h2>
           <p className="typography-paragraph">
-            We craft{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Explorable_explanation"
-              target="_blank"
-              rel="noreferrer"
-            >
-              visual essays
-            </a>
-            , immersive experiences or web documentaries.
-            {" "}
             We combine the audio, visual, and interactive capabilities of dynamic media to visualise existing insights or create unique choice-driven narratives.
           </p>
           <p className="typography-paragraph">

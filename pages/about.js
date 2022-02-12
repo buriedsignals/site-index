@@ -48,7 +48,7 @@ const About = () => {
           <h2 className="typography-paragraph-header">The Publication</h2>
           <p className="typography-paragraph">
             Buried Signals is a platform to spotlight extraordinary visual essays which communicate complex stories or data
-            efficiently. Occasionally we&apos;ll feature noteworthy OSINT research and immersive documentaries.
+            efficiently. Occasionally we&apos;ll publish insights from research and investigations.
           </p>
           <p className="typography-paragraph">
             The publication is built atop 
@@ -63,8 +63,8 @@ const About = () => {
           </p>
           <h2 className="typography-paragraph-header">Manifesto</h2>
           <p className="typography-paragraph">
-            To abstain from false claims of objectivity I will try to keep my&nbsp;   
-            <a href="http://www.paulgraham.com/identity.html" target="_blank" rel="noreferrer">identity small</a> and apply the following journalism principles on any work we publish ourselves. Tenets 2 and 6 will need to be excluded from essays we curate.
+            To abstain from false claims of objectivity we try to keep our   
+            <a href="http://www.paulgraham.com/identity.html" target="_blank" rel="noreferrer">identities small</a> and apply the following principles on any work we publish. Tenets 2 and 6 will need to be excluded from curated stories.
           </p>
           <Spacer multiplier={2} />
           <ol>
