@@ -7,6 +7,18 @@
     "image": "https://features.propublica.org/navy-accidents/uss-fitzgerald-destroyer-crash-crystal/1565383322837/assets/imgs/introposter.jpg",
     "creator": "ProPublica"
   },{
+    "title": "7 Billion Others",
+    "slug": "https://www.yannarthusbertrandphoto.com/yab/6-billion-others/",
+    "categories": ["Documentary"],
+    "image": "https://docubase.mit.edu/wp-content/uploads/2013/11/7-billion-others1.jpg",
+    "creator": "Yann Arthus Bertrand"
+  },{
+    "title": "The Sons Of Gallipoli",
+    "slug": "http://sonsofgallipoli.com/#!/",
+    "categories": ["Documentary"],
+    "image": "http://cms2.sonsofgallipoli.com/content/02_haluk.jpg",
+    "creator": "Jam3, Kale Group"
+  },{
     "title": "Up and Down the Ladder of Abstraction",
     "slug": "http://worrydream.com/LadderOfAbstraction/",
     "categories": ["Interactive"],
@@ -49,7 +61,7 @@
   {
     "title": "Surviving 911 : a VR film",
     "slug": "https://www.targostories.com/surviving-911",
-    "categories": ["VR"],
+    "categories": ["XR", "Documentary"],
     "image": "https://images.squarespace-cdn.com/content/v1/585962d720099e745811b20d/1631030223529-1OIDK6A3BXNZUXR9N5ZC/Surviving-911-targo-poster-%5Benglish%5D",
     "creator": "TARGO"
   },

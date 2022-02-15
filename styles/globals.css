@@ -457,6 +457,156 @@ li {
   font-weight: 400;
 }
 
+
+.svg-inline--fa {
+  max-height: 20px;
+}
+
+/*
+MOBILE TYPOGRAPHY
+*/
+.typography-paragraph {
+  font-family: Space Grotesk;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: white;
+}
+
+.typography-paragraph-header {
+  font-family: Space Grotesk;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.typography-page-header {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.021em;
+}
+
+.typography-main-header {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.021em;
+}
+
+.typography-list {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.typography-pledge 
+{
+  color: white;
+}
+
+.logo-sizer 
+{
+  height: 180px;
+  margin-top: 30px;
+}
+
+/*
+DESKTOP TYPOGRAPHY
+*/
+@media (min-width: 700px) {
+  .typography-paragraph {
+    font-family: Space Grotesk;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: -0.01em;
+  }
+
+  .typography-paragraph-header {
+    font-family: Space Grotesk;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 82px;
+    letter-spacing: -0.01em;
+  }
+
+  .typography-page-header {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  .typography-main-header {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  .typography-list {
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+}
+
+#archive-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+#archive-pagination button {
+  background: none;
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-style: normal;
+}
+
+#archive-pagination button.active {
+  color:black;
+  background: #a0ffcc;
+}
+
+#archive-pagination button.disabled {
+  color: #636363;
+}
+
+#archive-pagination button:not(.disabled):hover {
+  color:black;
+  background: #a0ffcc;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
   h1 {
@@ -468,8 +618,11 @@ li {
     overflow: hidden;
   }
   .header-wrapper {
-    width: auto;
+    width: 90%;
     margin-top: 0px;
+  }
+  .typography-main-header {
+    font-size: 30px;
   }
   .pages-header-container {
     height: 435px;
@@ -625,151 +778,3 @@ li {
   }
 }
 
-.svg-inline--fa {
-  max-height: 20px;
-}
-
-/*
-MOBILE TYPOGRAPHY
-*/
-.typography-paragraph {
-  font-family: Space Grotesk;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 31px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  color: white;
-}
-
-.typography-paragraph-header {
-  font-family: Space Grotesk;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 46px;
-  letter-spacing: -0.01em;
-  text-align: left;
-}
-
-.typography-page-header {
-  font-family: Space Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 130%;
-  text-align: center;
-  letter-spacing: -0.021em;
-}
-
-.typography-main-header {
-  font-family: Space Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 130%;
-  text-align: center;
-  letter-spacing: -0.021em;
-}
-
-.typography-list {
-  font-family: Space Grotesk;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 23px;
-  letter-spacing: -0.01em;
-  text-align: left;
-}
-
-.typography-pledge 
-{
-  color: white;
-}
-
-.logo-sizer 
-{
-  height: 180px;
-  margin-top: 30px;
-}
-
-/*
-DESKTOP TYPOGRAPHY
-*/
-@media (min-width: 700px) {
-  .typography-paragraph {
-    font-family: Space Grotesk;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 38px;
-    letter-spacing: -0.01em;
-  }
-
-  .typography-paragraph-header {
-    font-family: Space Grotesk;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 82px;
-    letter-spacing: -0.01em;
-  }
-
-  .typography-page-header {
-    font-family: Space Grotesk;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 140%;
-    text-align: center;
-    letter-spacing: -0.02em;
-  }
-
-  .typography-main-header {
-    font-family: Space Grotesk;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: -0.02em;
-  }
-
-  .typography-list {
-    font-family: Space Grotesk;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 31px;
-    letter-spacing: -0.01em;
-    text-align: left;
-  }
-}
-
-#archive-pagination {
-  display: flex;
-  justify-content: center;
-}
-
-#archive-pagination button {
-  background: none;
-  color: white;
-  font-family: Space Grotesk;
-  font-size: 14px;
-  font-style: normal;
-}
-
-#archive-pagination button.active {
-  color:black;
-  background: #a0ffcc;
-}
-
-#archive-pagination button.disabled {
-  color: #636363;
-}
-
-#archive-pagination button:not(.disabled):hover {
-  color:black;
-  background: #a0ffcc;
-}
