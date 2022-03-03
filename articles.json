@@ -1,5 +1,18 @@
 [ 
   {
+    "title": "The fight for food - why Asian farmers are standing firm to save their crops",
+    "slug": "https://kontinentalist.com/stories/why-are-asian-farmers-protesting-to-make-seed-saving-legal",
+    "categories": ["Visual"],
+    "featured": true,
+    "image": "https://cdn-media.kontinentalist.com/why-are-asian-farmers-protesting-to-make-seed-saving-legal/why-are-asian-farmers-protesting-to-make-seed-saving-legal.jpg",
+    "creator": "Kontinentalist"
+  },{
+    "title": "The Fallen of World War Two",
+    "slug": "http://www.fallen.io/ww2/",
+    "categories": ["Dataviz"],
+    "image": "http://www.fallen.io/ww2/img/teaser_column_flag_1200x628.jpg",
+    "creator": "Neil Halloran"
+  },{
     "title": "Death and Valor on an American Warship Doomed by its Own Navy",
     "slug": "https://features.propublica.org/navy-accidents/uss-fitzgerald-destroyer-crash-crystal/",
     "categories": ["Visual"],
@@ -9,7 +22,6 @@
     "title": "Below the Surface - AR Experience",
     "slug": "https://belowthesurface.resn.co.nz/",
     "categories": ["XR"],
-    "featured": true,
     "image": "https://belowthesurface.resn.co.nz/images/share.jpg",
     "creator": "Resn, Sea Shepherd"
   },{
