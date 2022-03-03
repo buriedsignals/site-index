@@ -10,7 +10,7 @@
     "title": "The Fallen of World War Two",
     "slug": "http://www.fallen.io/ww2/",
     "categories": ["Dataviz"],
-    "image": "http://www.fallen.io/ww2/img/teaser_column_flag_1200x628.jpg",
+    "image": "https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/fallen.jpg",
     "creator": "Neil Halloran"
   },{
     "title": "Death and Valor on an American Warship Doomed by its Own Navy",
