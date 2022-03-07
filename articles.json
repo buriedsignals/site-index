@@ -1,9 +1,15 @@
 [ 
   {
+    "title": "Ukraine Conflict Monitoring Dashboard",
+    "slug": "https://ukraine.buriedsignals.com",
+    "categories": ["Interactive"],
+    "featured": true,
+    "image": "https://ukraine.buriedsignals.com/img/img-meta.png",
+    "creator": "Buried Signals"
+  },{
     "title": "The fight for food - why Asian farmers are standing firm to save their crops",
     "slug": "https://kontinentalist.com/stories/why-are-asian-farmers-protesting-to-make-seed-saving-legal",
     "categories": ["Visual"],
-    "featured": true,
     "image": "https://cdn-media.kontinentalist.com/why-are-asian-farmers-protesting-to-make-seed-saving-legal/why-are-asian-farmers-protesting-to-make-seed-saving-legal.jpg",
     "creator": "Kontinentalist"
   },{
