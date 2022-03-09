@@ -10,8 +10,8 @@ const Privacy = () => {
         <title>Privacy Policy | Buried Signals</title>
         <meta title="Privacy Policy | Buried Signals" />
         <meta charset="utf-8" />
-        <meta name="description" content="A publication curating visual, immersive and interactive journalism." key="meta_description" />
-        <meta name="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" key="meta_image" />
+        <meta name="description" content="A publication curating visual, immersive and interactive journalism." />
+        <meta name="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
         <meta itemProp="name" content="Privacy Policy | Buried Signals" />
         <meta itemProp="description" content="A publication curating visual, immersive and interactive journalism." />
         <meta itemProp="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />

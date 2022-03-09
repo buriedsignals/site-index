@@ -26,12 +26,12 @@ const Studio = () => {
         <meta name="twitter:description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries" />
         <meta name="twitter:site" content="@buriedsignals" />
         <meta name="twitter:image:src" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
-        <meta name="og:title" content="Studio | Buried Signals" />
-        <meta name="og:description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries" />
-        <meta name="og:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
-        <meta name="og:url" content="https://buriedsignals.com" />
-        <meta name="og:site_name" content="Buried Signals" />
-        <meta name="og:type" content="website" />
+        <meta property="og:title" content="Studio | Buried Signals" />
+        <meta property="og:description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
+        <meta property="og:url" content="https://buriedsignals.com" />
+        <meta property="og:site_name" content="Buried Signals" />
+        <meta property="og:type" content="website" />
       </Head>
       <HeaderPages title="A creative production studio crafting visual, interactive and immersive stories." />
       <div className="projects-index">
@@ -54,7 +54,7 @@ const Studio = () => {
             improve our experiences, integrating the latest technological
             developments and user interaction research in our conceptualisation.
           </p>
-          <p className="typography-paragraph">Our productions are carbon offset with <a href="https://wren.co">Wren</a></p>
+          <p className="typography-paragraph">Our productions are carbon offset with <a className="link-animation" href="https://wren.co">Wren</a></p>
         </div>
         <div className="button-container">
           <Link href="https://t1ipnnn9dzv.typeform.com/to/vUqvFitw" passHref rel="noreferrer">
