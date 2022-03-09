@@ -22,7 +22,7 @@ class Footer extends React.Component {
             <a href="mailto:tom@buriedsignals.com" target="_blank" rel="noreferrer" className="footer-social"><FontAwesomeIcon icon={faEnvelope} /></a>
           </div>
           <div className="footer-logo-wrapper">
-            <img src="/img/bs_footer.svg" />
+            <img src="/img/bs_footer.svg" alt="Logo Buried Signals" />
           </div>
           <div className="footer-copyright">
           © 2021 Buried Signals. See <Link href="/privacy">Privacy and Terms Notice</Link>.

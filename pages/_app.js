@@ -25,7 +25,10 @@ function BuriedSignalsMag({ Component, pageProps }) {
 
   return (
     <div>
-    <Component {...pageProps} />
+      <Head>
+        <html lang="en" />
+      </Head>
+      <Component {...pageProps} />
     </div>
     );
 }

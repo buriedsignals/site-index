@@ -47,7 +47,7 @@ function ArticleCard({ article = {}, featured = false }) {
           )}
         </div>
         <div className={styles.article_image_container}>
-          <img className={styles.article_image} src={article.image}></img>
+          <img className={styles.article_image} src={article.image} alt={`Hero image of ${article.title} by ${article.client}`}></img>
         </div>
         <div className={styles.article_details}>
           <div className={styles.article_category}>{category}</div>

@@ -76,9 +76,9 @@ const About = () => {
             ))}
           </ol>
           <div className="button-container">
-            <img src="https://www.protruthpledge.org/hotlink-ok/ptpBacked.gif" className="logo-sizer"></img>
+            <img src="https://www.protruthpledge.org/hotlink-ok/ptpBacked.gif" className="logo-sizer" alt="Logo Protruth Pledge"></img>
             <p className="typography-pledge">We signed the <a className="link-animation" href="http://ProTruthPledge.org">Pro-Truth Pledge</a> please hold us accountable.</p>
-            <img src="../static/img/1percent.png" className="logo-sizer"></img>
+            <img src="../static/img/1percent.png" className="logo-sizer" alt="Logo One Percent for the planet"></img>
           </div>
         </div>
       </div>

@@ -21,6 +21,7 @@ function Navbar({ theme = "light" }) {
                   ? "/img/nav-logo-light.svg"
                   : "/img/nav-logo-dark.svg"
               }
+              alt="Logo Buried Signals"
             ></img>
           </a>
         </Link>
