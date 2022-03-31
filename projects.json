@@ -7,10 +7,10 @@
         "client": "RED BULL"
     },
     {
-        "title": "Chromasound VR",
-        "slug": "https://youtu.be/WG2HcgsFDEo",
-        "categories": ["VR"],
-        "image": "https://hyphenate.tv/wp-content/uploads/2020/01/vr_redbull-chromasoundVR_BLANK.jpg",
-        "client": "RED BULL"
+        "title": "Ukraine Conflict Monitoring Dashboard",
+        "slug": "https://ukraine.buriedsignals.com",
+        "categories": ["Interactive"],
+        "image": "https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/public/img/ukraine_1.jpg",
+        "client": "Buried Signals"
     }
 ]

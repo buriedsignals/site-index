@@ -1,11 +1,17 @@
 [ 
   {
-    "title": "Ukraine Conflict Monitoring Dashboard",
-    "slug": "https://ukraine.buriedsignals.com",
-    "categories": ["Interactive"],
+    "title": "Amazon Jungle Lab",
+    "slug": "https://graphics.reuters.com/CLIMATE-CHANGE/BRAZIL-CARBON/nmovabezapa/",
+    "categories": ["Visual"],
     "featured": true,
-    "image": "https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/public/img/ukraine_1.jpg",
-    "creator": "Buried Signals"
+    "image": "https://i0.wp.com/snd.org/wp-content/uploads/2022/03/SILVER-Reuters-Marco-Hernandez-4.png?resize=1536%2C717&ssl=1",
+    "creator": "REUTERS Graphics"
+  },{
+    "title": "Sunisa Lee - The Gymnast",
+    "slug": "https://www.nytimes.com/interactive/2021/sports/olympics/suni-lee-gymnastics.html",
+    "categories": ["Visual, 3D"],
+    "image": "https://static01.nyt.com/images/2021/07/21/sports/OLY-gymnastics-still-promo/OLY-gymnastics-still-promo-facebookJumbo-v2.png",
+    "creator": "New York Times"
   },{
     "title": "The fight for food - why Asian farmers are standing firm to save their crops",
     "slug": "https://kontinentalist.com/stories/why-are-asian-farmers-protesting-to-make-seed-saving-legal",
