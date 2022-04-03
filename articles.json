@@ -1,9 +1,15 @@
 [ 
   {
+    "title": "How China Spreads Propaganda About Uyghurs in Xinjiang",
+    "slug": "https://www.nytimes.com/interactive/2021/06/22/technology/xinjiang-uyghurs-china-propaganda.html",
+    "categories": ["Investigative", "Visual"],
+    "featured": true,
+    "image": "https://static01.nyt.com/images/2021/06/21/technology/xinjiang-uyghurs-china-propaganda-promo/xinjiang-uyghurs-china-propaganda-1624384574031-facebookJumbo.jpg",
+    "creator": "The New York Times"
+  },{
     "title": "Amazon Jungle Lab",
     "slug": "https://graphics.reuters.com/CLIMATE-CHANGE/BRAZIL-CARBON/nmovabezapa/",
     "categories": ["Visual"],
-    "featured": true,
     "image": "https://i0.wp.com/snd.org/wp-content/uploads/2022/03/SILVER-Reuters-Marco-Hernandez-4.png?resize=1536%2C717&ssl=1",
     "creator": "REUTERS Graphics"
   },{
