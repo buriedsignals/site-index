@@ -33,7 +33,7 @@ const Studio = () => {
         <meta property="og:site_name" content="Buried Signals" />
         <meta property="og:type" content="website" />
       </Head>
-      <HeaderPages title="A creative production studio crafting visual, interactive and immersive stories." />
+      <HeaderPages title="A creative production studio specialized in narrative and cinematic visualization." />
       <div className="projects-index">
           <ArticleCard article={projects[0]}></ArticleCard>
           <ArticleCard article={projects[1]}></ArticleCard>
@@ -42,7 +42,7 @@ const Studio = () => {
         <div className="pages-text-container">
           <h2 className="typography-paragraph-header">The Studio</h2>
           <p className="typography-paragraph">
-            We combine the audio, visual, and interactive capabilities of dynamic media to visualise existing insights or create unique choice-driven narratives.
+            We combine the audio, visual, and interactive capabilities of dynamic media to visualise existing insights or create unique choice-driven cinematic narratives.
           </p>
           <p className="typography-paragraph">
             The studio relies on a constellation of senior artists and

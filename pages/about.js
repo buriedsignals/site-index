@@ -47,8 +47,7 @@ const About = () => {
         <div className="pages-text-container">
           <h2 className="typography-paragraph-header">The Publication</h2>
           <p className="typography-paragraph">
-            Buried Signals is a platform to spotlight extraordinary visual essays which communicate complex stories or data
-            efficiently. Occasionally we&apos;ll publish insights from research and investigations.
+            Buried Signals is a publication that curates narrative visualisation by featuring extraordinary visual essays which communicate complex stories or data efficiently. Occasionally we publish insights from research and investigations.
           </p>
           <p className="typography-paragraph">
             The publication is built atop 
