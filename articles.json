@@ -7,13 +7,6 @@
     "image": "https://static01.nyt.com/images/2021/06/21/technology/xinjiang-uyghurs-china-propaganda-promo/xinjiang-uyghurs-china-propaganda-1624384574031-facebookJumbo.jpg",
     "creator": "The New York Times"
   },{
-    "title": "Insights from an analysis of cinematic visualisations.",
-    "slug": "/cinematic-viz",
-    "deployUrl": "https://cinematic-viz.vercel.app/",
-    "categories": ["Research"],
-    "image": "https://cinematic-viz.vercel.app/static/img/planets.jpg",
-    "creator": "Buried Signals"
-  },{
     "title": "Amazon Jungle Lab",
     "slug": "https://graphics.reuters.com/CLIMATE-CHANGE/BRAZIL-CARBON/nmovabezapa/",
     "categories": ["Visual"],
