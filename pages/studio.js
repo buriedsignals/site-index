@@ -62,9 +62,6 @@ const Studio = () => {
           </Link>
         </div>
       </div>
-      <div className="projects-index">
-          <ArticleCard article={projects[2]}></ArticleCard>
-      </div>
       <Footer />
     </div>
   );
