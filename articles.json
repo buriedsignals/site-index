@@ -1,9 +1,21 @@
 [ 
   {
+    "title": "The Yemen Tribute",
+    "slug": "https://yemen.buriedsignals.com/",
+    "categories": ["Investigative", "Visual"],
+    "featured": true,
+    "image": "https://yemen.buriedsignals.com/img/img-meta.png",
+    "creator": "Buried Signals"
+  },{
+    "title": "Countdown to the airstrike: the moment Israeli forces hit al-Jalaa tower, Gaza",
+    "slug": "https://www.theguardian.com/global-development/ng-interactive/2021/jul/28/countdown-to-demolition-the-story-of-al-jalaa-tower-gaza-israel-palestine",
+    "categories": ["Investigative", "Visual"],
+    "image": "https://i.guim.co.uk/img/media/f40ef70e2e478b47fd145cf9a5d5eb5cf2dbbc93/0_0_1000_600/master/1000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1382ada867b8884d1305ea05dd0f1dff",
+    "creator": "The Guardian"
+  },{
     "title": "How China Spreads Propaganda About Uyghurs in Xinjiang",
     "slug": "https://www.nytimes.com/interactive/2021/06/22/technology/xinjiang-uyghurs-china-propaganda.html",
     "categories": ["Investigative", "Visual"],
-    "featured": true,
     "image": "https://static01.nyt.com/images/2021/06/21/technology/xinjiang-uyghurs-china-propaganda-promo/xinjiang-uyghurs-china-propaganda-1624384574031-facebookJumbo.jpg",
     "creator": "The New York Times"
   },{
