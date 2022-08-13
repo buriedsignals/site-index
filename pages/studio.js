@@ -42,7 +42,7 @@ const Studio = () => {
         <div className="pages-text-container">
           <h2 className="typography-paragraph-header">The Studio</h2>
           <p className="typography-paragraph">
-            We combine the audio, visual, and interactive capabilities of dynamic media to visualise existing insights or create unique choice-driven cinematic narratives.
+            We combine the audio, visual, and interactive capabilities of dynamic media to visualise existing insights or create unique cinematic narratives that affect change.
           </p>
           <p className="typography-paragraph">
             The studio relies on a constellation of senior artists and
@@ -50,9 +50,9 @@ const Studio = () => {
             design and development we&apos;ve produced enhanced editorial for commercial or institutional clients.
           </p>
           <p className="typography-paragraph">
-            We work alongside the Human Data Interface Group to continuously
+            We work alongside academic experts to continuously
             improve our experiences, integrating the latest technological
-            developments and user interaction research in our conceptualisation.
+            developments and user interaction research into our conceptualisation.
           </p>
           <p className="typography-paragraph">Our productions are carbon offset with <a className="link-animation" href="https://wren.co">Wren</a></p>
         </div>

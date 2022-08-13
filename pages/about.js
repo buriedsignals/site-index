@@ -36,7 +36,7 @@ const About = () => {
         <meta name="twitter:site" content="@buriedsignals" />
         <meta name="twitter:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
         <meta property="og:title" content="Buried Signals" />
-        <meta property="og:description" content="A publication curating visual, interactive and investigative stories." />
+        <meta property="og:description" content="A publication curating visual narratives." />
         <meta property="og:image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
         <meta property="og:url" content="https://buriedsignals.com" />
         <meta property="og:site_name" content="Buried Signals" />
@@ -47,7 +47,7 @@ const About = () => {
         <div className="pages-text-container">
           <h2 className="typography-paragraph-header">The Publication</h2>
           <p className="typography-paragraph">
-            Buried Signals is a publication that curates narrative visualisation by featuring extraordinary visual essays which communicate complex stories or data efficiently. Occasionally we publish insights from research and investigations.
+            Buried Signals is a publication that curates and spotlights visual narratives that humanize complex stories by combining media, data, graphics and interaction to create clarity. The project also collects insights and resources that help others harness the interactive capabilities of the web to create powerful stories that demand action. 
           </p>
           <p className="typography-paragraph">
             The publication is built atop 
