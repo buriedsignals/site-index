@@ -16,7 +16,7 @@ const Studio = () => {
       <Head>
         <title>Studio | Buried Signals</title>
         <meta charset="utf-8" />
-        <meta name="description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries."/>
+        <meta name="description" content="A specialised film production and interactive design studio crafting visual narratives and documentaries."/>
         <meta name="image" content="https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/static/img/meta.png" />
         <meta itemProp="name" content="Studio | Buried Signals" />
         <meta itemProp="description" content="A creative production studio crafting explorable essays, visual reports and immersive documentaries" />

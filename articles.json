@@ -1,9 +1,27 @@
 [ 
   {
+    "title": "Absurd Trolley Problems",
+    "slug": "https://neal.fun/absurd-trolley-problems/",
+    "categories": ["Interactive"],
+    "featured": true,
+    "image": "http://neal.fun/share-cards/absurd-trolley-problems2.png",
+    "creator": "Neal Agarwal"
+  },{
+    "title": "Here’s What Cassini Saw During Its Tour of Saturn",
+    "slug": "https://www.nationalgeographic.com/science/graphics/cassini-saturn-nasa-3d-grand-tour",
+    "categories": ["Interactive"],
+    "image": "http://i.natgeofe.com/n/bb6e5257-d2c7-439a-aeba-1bcb7473d2f3/cassini-og.png?w=1200",
+    "creator": "National Geographic"
+  },{
+    "title": "Longines Spirit | Zulu Time",
+    "slug": "https://zulu.longines.com/",
+    "categories": ["Visual"],
+    "image": "https://zulu.longines.com//share.jpg",
+    "creator": "Immersive Garden"
+  },{
     "title": "Kalso | The Story Behind The Original Wellness Shoe",
     "slug": "https://www.kalso.com/",
     "categories": ["Visual"],
-    "featured": true,
     "image": "https://raw.githubusercontent.com/buriedsignalsmag/site-index/main/public/static/img/kalso.jpg",
     "creator": "VAAN Group"
   },{

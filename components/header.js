@@ -17,7 +17,7 @@ class Footer extends React.Component {
     return (
       <div className="header-wrapper">
         <h1 className="typography-main-header">
-        Discover the world&apos;s most compelling visual stories.
+        Discover the world&apos;s best visual narratives.
         </h1>
         <div className="header-socials">
           <a
@@ -35,14 +35,6 @@ class Footer extends React.Component {
             className="header-social"
           >
             <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a
-            href="https://instagram.com/buriedsignals"
-            target="_blank"
-            rel="noreferrer"
-            className="header-social"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
             href="mailto:tom@buriedsignals.com"
