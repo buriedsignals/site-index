@@ -36,14 +36,6 @@ class Footer extends React.Component {
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a
-            href="mailto:tom@buriedsignals.com"
-            target="_blank"
-            rel="noreferrer"
-            className="header-social"
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
         </div>
       </div>
     );
